@@ -13,3 +13,5 @@ for i in range(1, 5):
     dif += td
 print(i)
 print(dif)
+plt.plot(range(0,100),M)
+plt.show()
