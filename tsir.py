@@ -1,6 +1,7 @@
 r = []
-for _ in range(5):
-    r.append([0] * 5)
+def init_lattice(r,N):
+    for _ in range(N+1):
+        r.append([0] * (N+1))
 
 def rate(i,j):
     if i == 0 and j == 0:
@@ -14,6 +15,7 @@ def rate(i,j):
             print(i, j_)
             r[i][j_] = rate(i-1, j_) * 0.9
     return r[i][j]
+
 def Z(i,j, n):
     if i == n:
         return 100
@@ -22,7 +24,9 @@ def Z(i,j, n):
     print(i,j,t)
     return t
 
-rate(4, 4)
+init_lattice(r,5)
+rate(5,5)
+print(r)
 print(Z(0,0,4))
 
 
