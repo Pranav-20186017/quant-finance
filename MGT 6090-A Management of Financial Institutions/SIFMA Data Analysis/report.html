@@ -1,0 +1,669 @@
+<h2>US Treasury Securities Trading Volume Analysis</h2><h2>Justification for econmic indicators chosen to correlate with the US Treasury Securities Trading Volume</h2><ul>
+<li>Federal Funds Rate (FEDFUNDS)</li>
+<li>Explanation: The federal funds rate is the interest rate at which depository institutions lend reserve balances to other depository institutions overnight. It's the primary tool that the Federal Reserve uses to influence monetary policy and, by extension, the broader economy.</li>
+<li>Rationale for Selection: US Treasury Securities, especially short-term ones like T-Bills, often serve as a benchmark for many other interest rates in the economy. By comparing the federal funds rate with the trading volume of US Treasury Securities, we can glean insights into how changes in monetary policy or market expectations might be influencing demand for these securities.</li>
+<li>Consumer Price Index (CPIAUCNS) </li>
+<li>The Consumer Price Index measures the average change over time in the prices paid by urban consumers for a basket of consumer goods and services. It's a key measure of inflation.</li>
+<li>Rationale for Selection: Inflation erodes the purchasing power of money. When investors anticipate higher inflation, they might adjust their portfolios accordingly. By analyzing the relationship between CPI and the trading volume of US Treasury Securities, we can understand how inflation expectations might be driving demand for these assets.</li>
+<li>Rationale for Selection: Inflation erodes the purchasing power of money. When investors anticipate higher inflation, they might adjust their portfolios accordingly. By analyzing the relationship between CPI and the trading volume of US Treasury Securities, we can understand how inflation expectations might be driving demand for these assets.</li>
+<li>Real Gross Domestic Product (GDPC1)</li>
+<li>Explanation: Real GDP is the value of all final goods and services produced within a country's borders in a specific time period, adjusted for inflation or deflation. It's a primary indicator of a country's economic health.</li>
+<li>Rationale for Selection: The overall health of the economy can influence investor sentiment and behavior. A growing economy might boost confidence and increase demand for riskier assets, while a contracting economy might do the opposite. Observing how real GDP correlates with US Treasury Securities trading volume can offer insights into these dynamics.</li>
+<li>M2 Money Supply (M2) </li>
+<li>Explanation: M2 is a measure of the money supply that includes cash, checking deposits, and easily convertible near money. It's a broader definition than M1 (which only includes cash and checking deposits) and is used to gauge the money available in the economy.</li>
+<li>Rationale for Selection: A significant change in the money supply can impact interest rates, inflation, and, by extension, the bond market. By comparing M2 with the trading volume of US Treasury Securities, we can identify potential relationships between liquidity in the economy and demand for these securities.</li>
+</ul><h2>US Treasury Securities Trading Volume Patterns</h2>
+<ul>
+<li>The trading volume for Bills seems to have a noticeable increase around the 2008 financial crisis, indicating a shift towards shorter-term securities as investors sought safety. There's another spike around 2020, likely influenced by the economic impact of the COVID-19 pandemic and the monetary measures taken by the Fed.</li>
+<li>The trading volume for Notes appears to be relatively stable, with noticeable increases during significant economic events. The recent uptrend might be a reflection of the inflationary environment and anticipation of interest rate hikes.</li>
+<li>Bonds, being long-term securities, show a relatively steady volume until a noticeable increase around 2020. This could be due to investors seeking higher yields in the wake of QE and anticipating long-term economic impacts of the pandemic.</li>
+<li>Trading volumes for TIPS (Treasury Inflation-Protected Securities) seem to rise in the later years, possibly reflecting investors' concerns about inflation, especially after significant monetary interventions by the Fed.</li>
+<li>FRNs (Floating Rate Notes) have a steady volume with some minor fluctuations, suggesting that they might not be the primary vehicle for investors during economic upheavals, given their floating interest rate nature.</li>
+<li>The trading volume for Coupon Securities exhibits periodic spikes, likely reflecting investors' reactions to economic events. The surge around 2020 might be a response to the anticipated economic challenges of the pandemic.</li>
+<li>The aggregate trading volume indicates a clear surge during the 2008 financial crisis, suggesting a heightened trading activity in U.S. Treasuries. Another significant rise is observed around 2020, echoing the economic impacts of the COVID-19 pandemic and subsequent monetary measures.</li>
+</ul><h2>US Treasury Securities Vs Macro Patterns</h2>
+<ul>
+<li>Treasury Bills are positively correlated with the Federal Funds Rate, suggesting that when the Federal Reserve increases rates, there might be increased demand or activity for Treasury Bills.</li>
+<li>They also show a positive correlation with M2 Money Supply, indicating that when there's an expansion in the money supply, Treasury Bills might see increased activity.</li>
+<li>Treasury Bills are negatively correlated with the CPI, indicating that as inflation rises, the relative attractiveness or returns of Treasury Bills might decrease.</li>
+<li>Treasury Inflation Index Securities: There's a strong negative correlation with Real GDP, implying that these inflation-protected securities might be less appealing in periods of high real economic growth. They are positively correlated with M2 Money Supply, suggesting that an increase in money circulation might lead to concerns about future inflation, making these securities more appealing.</li>
+<li>Floating Rate Notes exhibit a positive correlation with securities due in 2 years or less, hinting that they might respond similarly to certain macroeconomic changes.</li>
+<li>Their behavior doesn't show much correlation with the provided macro indicators, suggesting that other factors might be more influential.</li>
+<li>Shorter duration securities, like those due in 2 years or less, are negatively correlated with M2 Money Supply. This might suggest that as the money supply expands, these securities become less attractive.</li>
+<li>Longer-duration securities, especially those due in more than 7 years, have a positive correlation with M2. This might indicate that they are viewed as a hedge against long-term inflationary pressures from an expanding money supply.</li>
+<li>The aggregate of these securities, possibly represented by the Total2 column, correlates positively with the Federal Funds Rate and negatively with the CPI. This pattern suggests that as interest rates rise or inflationary pressures increase, the overall  market for these securities might adjust accordingly.</li>
+</ul><h2>Correlation across various securities in the market</h2>
+<ul>
+<li>Treasury Bills (T-Bills) tend to have a positive correlation with other Treasury securities, such as T-notes and T-bonds. This suggests that when T-Bills experience increased demand or activity, T-notes and T-bonds may also move in a similar direction.</li>
+<li>Floating Rate Notes appear to have relatively low correlations with other Treasury securities and macroeconomic indicators. This suggests that FRNs may have unique characteristics and respond differently to market conditions compared to fixed-rate Treasuries.</li>
+<li>Total2, which may represent an aggregate of all Treasury securities, shows significant correlations with both macroeconomic indicators and Treasury securities of different tenors. This suggests that Total2 reflects the overall market sentiment and may respond to a combination of macroeconomic and market-specific factors.</li>
+</ul><h2>US GCF Repo Index, Triparty Repo, and Primary Dealer Financing (Repo/Reverse Repo) Analysis</h2><h2>Justification for econmic indicators chosen to correlate with the US GCF Repo Index</h2><ul>
+<li>3-Month Treasury Bill Rate (DGS3MO)</li>
+<li>Explanation: This rate represents the return on an investment in a short-term U.S. government debt instrument (a Treasury bill) that matures in 3 months. It's a reliable indicator of short-term interest rates in the U.S.</li>
+<li>Rationale for Selection: The GCF Repo Index reflects the cost of overnight borrowing collateralized by Treasury and agency debt, which are closely related to short-term U.S. government debt. Comparing the GCF Repo Index with DGS3MO allows for insights into how short-term government interest rates might be influencing the repo market.</li>
+<li>Federal Funds Rate (FEDFUNDS)</li>
+<li>Explanation: As mentioned previously, the federal funds rate is the interest rate at which depository institutions lend reserve balances to other depository institutions overnight. It's central to U.S. monetary policy.</li>
+<li>Rationale for Selection: The GCF Repo Index and the federal funds rate both represent overnight borrowing rates, but they differ in their collateral requirements and counterparty risks. Comparing the two can provide insights into how shifts in monetary policy or interbank lending conditions might be impacting the secured lending market.</li>
+<li>TED Spread (TEDRATE)</li>
+<li>Explanation: The TED spread measures the difference between the interest rates on interbank loans (as represented by the 3-month LIBOR) and short-term U.S. government debt (3-month Treasury bills). It's a common gauge of credit risk in the broader economy.</li>
+<li>Rationale for Selection: A widening TED spread indicates increasing perceived credit risk in the banking system, which could influence the demand for secured borrowing (like repos). By analyzing the relationship between the TED spread and the GCF Repo Index, we can gain insights into how systemic credit risk perceptions might be influencing repo rates.</li>
+</ul><h2>Time Series Analysis</h2>
+<ul>
+<li>All the series seem to exhibit some form of cyclical behavior, where values increase and decrease periodically. This might be due to certain economic cycles or regular market activities.</li>
+<li>Volatility: There are instances, especially in the series for "GC Treasuries", "GC Agencies", and "GC MBS", where we notice spikes or sudden drops. These could be due to specific market events or changes in monetary policy.</li>
+<li>Overall Trend: While there are fluctuations, there doesn't seem to be a consistent upward or downward trend for a longer period in any of the series. This might suggest that while short-term factors affect the values, in the long run, they tend to stabilize around a mean.</li>
+</ul><h2>US GCF Repo Index VS Macro Patterns</h2><ul>
+<li>Rates_Treasuries, Rates_Agency, and Rates_MBS have a very high positive correlation with FED_FUNDS and DGS3MO. This implies that as the Federal Funds rate and the 3-month Treasury Bill rate move, the rates on Treasuries, Agency, and MBS repos tend to move in the same direction.</li>
+<li>The correlation between the repo rates and TEDRATE is moderate positive, indicating that as the TED spread (a measure of credit risk in the general market) increases, the rates on repos might also tend to rise, reflecting increased perceived credit risks in the repo market.</li>
+<li>The Total_Par_Amount for all three categories (Treasuries, Agency, MBS) shows a negative correlation with FED_FUNDS. This suggests that as the Federal Funds rate increases, the total par amount of repos might decrease. This could be due to increased borrowing costs leading to reduced repo activity.</li>
+<li>Interestingly, Total_Par_Amount_MBS has a positive correlation with DGS3MO, which suggests that an increase in the short-term Treasury Bill rate might be associated with an increase in the total par amount of MBS repos. </li>
+<li>The patterns here are quite similar to the Total Par Amount, with negative correlations observed with FED_FUNDS for all three categories. Again, this indicates that as the Federal Funds rate rises, the average daily par amount of repos might decrease.</li>
+<li>The Average_Daily_Par_Amount_MBS shows a positive correlation with DGS3MO, echoing the same pattern observed with the total par amount.</li>
+<li>TEDRATE has a positive correlation with repo rates, but a negative or very low correlation with par amounts. This indicates that as credit risk in the broader market rises, repo rates tend to rise, but the volume (or par amount) of repos might decrease.</li>
+</ul><h2>Correlation between various market Securities in the same market</h2><ul>
+<li>Repo rates for Treasuries, Agency, and MBS are highly correlated, indicating that they move in the same direction most of the time.</li>
+<li>In terms of trading volume (both total and average daily), there are strong positive correlations between Treasuries and Agency repos. Correlations with MBS repos are moderate but still positive.</li>
+<li>Total_Par_Amount_Treasuries and Total_Par_Amount_Agency have a strong positive correlation of 0.756771, indicating that when the trading volume for Treasuries increases, the trading volume for Agency securities also tends to increase.</li>
+<li>Overall, movements in one type of security within the repo market often correspond with similar movements in other types of securities, suggesting that common factors influence the entire market.</li>
+</ul><h2>US Repo Primary Dealer Financing (Repo/Reverse Repo)</h2><h2>Justification for picking macro indicators</h2><ul>
+<li>Federal Funds Rate (FEDFUNDS)</li>
+<li>Explanation: The federal funds rate is the interest rate at which depository institutions lend reserve balances to other depository institutions overnight. It serves as a benchmark for short-term interest rates and is directly influenced by the Federal Reserve's monetary policy actions.</li>
+<li>Rationale for Selection: The cost of short-term borrowing in the repo market may be influenced by the federal funds rate. As the rate goes up, it becomes more expensive to borrow, which can impact repo activity. Conversely, a lower rate may stimulate borrowing.</li>
+<li>U.S. Treasury Yield (e.g., DGS3MO for 3-month Treasury bills)</li>
+<li>Explanation: This represents the return on investment for U.S. government debt, such as Treasury bills or longer-term Treasury bonds.</li>
+<li>Rationale for Selection: Repos are often collateralized by U.S. Treasury securities. Therefore, changes in Treasury yields can influence the attractiveness of repos. For example, when Treasury yields rise, the repo rates might also increase as the cost of borrowing against Treasuries goes up.</li>
+<li>Total Debt of Domestic Nonfinancial Sectors (TCMDO)</li>
+<li>Explanation: This metric represents the total debt held by domestic nonfinancial sectors, which includes federal, state, and local governments; households and nonprofit organizations; nonfinancial businesses; and more.</li>
+<li>Rationale for Selection: High levels of debt in the nonfinancial sector can lead to increased demand for short-term financing, such as repos. Conversely, lower debt levels may indicate reduced repo activity.</li>
+</ul><h2>Primary Dealer Time Series Patterns</h2><ul>
+<li>Most of the series exhibit a downward trend, particularly noticeable in variables such as Repo_Overnight, Repo_Term, and Repo_Total. This could be indicative of a decreasing reliance on or availability of these types of repurchase agreements over time.</li>
+<li>Rev_Repo_Overnight and Rev_Repo_Term appear to show an upward trend, suggesting an increase in reverse repurchase agreements over time.</li>
+<li>Some series, such as Repo_Overnight and Repo_Total, display noticeable volatility around certain periods, especially near the beginning of the observed timeframe.</li>
+<li>Certain series like Repo_Overnight and Repo_Total exhibit sharp changes at specific points in time. These could be due to specific market events or regulatory changes that affected the repo market.</li>
+<li>Some series appear to move in tandem, indicating potential correlations. For instance, Repo_Overnight, Repo_Term, and Repo_Total have similar patterns, suggesting that factors affecting one might also impact the others.</li>
+</ul><h2>Primary Dealer Vs Macro Patterns</h2><ul>
+<li>Both Repo_Overnight and Repo_Total show a slight positive correlation with TCMDO (Total Checkable Deposits in Banks), suggesting that as the total checkable deposits in banks increase, the repo operations related to these securities might tend to increase marginally.</li>
+<li>Repo_Overnight, Repo_Total, and Rev_Repo_Overnight have a positive correlation with TCMDO but a negative correlation with FEDFUNDS and DGS3MO.</li>
+<li>Securities like Rev_Repo_Overnight, Rev_Repo_Term, and Rev_Repo_Total show varied correlations with the macro indicators. For instance, Rev_Repo_Overnight has a positive correlation with TCMDO but is negatively correlated with FEDFUNDS and DGS3MO.</li>
+<li>Securities such as Repo_Overnight, Repo_Total, and Rev_Repo_Overnight have a strong positive correlation with Repo_Rev_Repo_Total, indicating that both repo and reverse repo operations tend to move in tandem.</li>
+</ul><h2>Correlation with same type Securities in the Market</h2>
+<ul>
+<li>There's a strong positive correlation between Repo_Overnight and Repo_Total, suggesting that when overnight repo operations increase, the total repo operations also see a similar rise. This pattern is also observed between Rev_Repo_Overnight and Rev_Repo_Total.</li>
+<li>Securities like Repo_US Treasuries and Rev_Repo_US Treasuries exhibit a positive correlation with TCMDO, suggesting that as the total checkable deposits in banks rise, repo and reverse repo operations related to US Treasuries also increase.
+Mixed Correlations:</li>
+<li>Securities like Repo_ABS, Repo_Corporate, and Repo_Equities show varied correlations with other securities and macro indicators. For instance, Repo_ABS is negatively correlated with Repo_Overnight and Repo_Total but has a positive correlation with Rev_Repo_US Treasuries.</li>
+</ul><h2>US Equity Issuance and Trading Volumes</h2><h2>Justification for Macro Measures</h2><ul>
+<li>S&amp;P 500 Index (symbol: SP500):</li>
+<li>Explanation: The S&amp;P 500 index is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the United States. It is one of the most widely followed equity indices in the world.</li>
+<li>Rationale: The S&amp;P 500 index provides a broad snapshot of the overall U.S. equity market's health. Trends in equity issuance and trading volumes can often be linked to movements in the index, as investor sentiment and market momentum drive both the index and trading behaviors.</li>
+<li>Effective Federal Funds Rate (symbol: FEDFUNDS):</li>
+<li>Explanation: This rate represents the interest rate at which depository institutions lend reserve balances to other depository institutions overnight. It's an indicator of the overall stance of U.S. monetary policy.</li>
+<li>Rationale: The federal funds rate can impact the cost of borrowing and the return on savings. A lower rate can stimulate borrowing and spending in the economy, which might lead to increased equity issuance as companies raise capital and higher trading volumes as investors seek better returns in the stock market.</li>
+<li>Consumer Sentiment (symbol: UMCSENT):</li>
+<li>Explanation: The University of Michigan's Consumer Sentiment Index measures consumer confidence in the U.S. economic outlook. It provides insights into consumer attitudes and expectations regarding the economy.</li>
+<li>Rationale: Consumer sentiment is a leading indicator of consumer spending, which makes up a significant portion of the U.S. economy. Positive sentiment can lead to increased spending, potentially boosting company revenues and prompting more equity issuance. Moreover, a buoyant consumer sentiment can drive investor optimism, leading to higher trading volumes.</li>
+</ul><h2>Time Series Patterns</h2>
+<ul>
+<li>The data shows fluctuations in equity issuance over time, with spikes and dips. These fluctuations might be influenced by broader market conditions, regulatory changes, or company-specific events.</li>
+<li>IPOs, Secondaries, and Total CS: These columns represent different types of equity issuance. We can observe fluctuations in the issuance volumes over time. The data shows spikes, which might be due to certain economic conditions or company-specific events encouraging IPOs or secondaries. For instance, there is a noticeable spike in IPOs in April 2019.</li>
+</ul><h2>US Equity Issuance Vs Macro Patterns</h2>
+<ul>
+<li>There's a positive correlation between the S&amp;P 500 index and IPOs. As the broader market rises, IPO activity tends to increase.</li>
+<li>However, the S&amp;P 500 shows a negative correlation with Secondaries and Total CS. This suggests that during bullish market conditions, the number of secondary offerings might decrease.</li>
+<li>The Federal Funds Rate displays a negative correlation with IPOs, Secondaries, Total CS, and Total Equity. This suggests that lower interest rates, which make borrowing cheaper, might stimulate companies to go public or issue more shares.</li>
+<li>Consumer sentiment exhibits a negative correlation with IPOs, Secondaries, Total CS, and Total Equity. This indicates that when consumers are more optimistic about the economy, there might be a decrease in equity issuances. This counter-intuitive observation could be influenced by other external factors or the specific time frame of the data.</li>
+</ul><h2>Correlation with Other Securities in the Market</h2>
+<ul>
+<li>There's a strong positive correlation between IPOs and Secondaries, suggesting that when IPO activities are vibrant, secondary market activities also tend to increase. This could be because the same factors that make the market conducive for IPOs also make it favorable for secondary offerings.</li>
+<li>There's a strong positive correlation between IPOs and Total CS, indicating that as IPO activities rise, the overall common stock issuance (Total CS) also sees an uptick.</li>
+<li>A positive correlation between these two suggests that as preferred stock issuances increase, the total equity issuances also tend to increase.</li>
+</ul><h2>US Equity Trading Volume</h2><h2>Justification for Macro Measures</h2>
+<ul>
+<li>S&amp;P 500 Index (symbol: SP500):</li>
+<li>Explanation: The S&amp;P 500 index is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the United States. It is one of the most widely followed equity indices in the world.</li>
+<li>Rationale: The S&amp;P 500 index provides a broad snapshot of the overall U.S. equity market's health. Trends in equity issuance and trading volumes can often be linked to movements in the index, as investor sentiment and market momentum drive both the index and trading behaviors.</li>
+<li>Effective Federal Funds Rate (symbol: FEDFUNDS):</li>
+<li>Explanation: This rate represents the interest rate at which depository institutions lend reserve balances to other depository institutions overnight. It's an indicator of the overall stance of U.S. monetary policy.</li>
+<li>Rationale: The federal funds rate can impact the cost of borrowing and the return on savings. A lower rate can stimulate borrowing and spending in the economy, which might lead to increased equity issuance as companies raise capital and higher trading volumes as investors seek better returns in the stock market.</li>
+<li>Consumer Sentiment (symbol: UMCSENT):</li>
+<li>Explanation: The University of Michigan's Consumer Sentiment Index measures consumer confidence in the U.S. economic outlook. It provides insights into consumer attitudes and expectations regarding the economy.</li>
+<li>Rationale: Consumer sentiment is a leading indicator of consumer spending, which makes up a significant portion of the U.S. economy. Positive sentiment can lead to increased spending, potentially boosting company revenues and prompting more equity issuance. Moreover, a buoyant consumer sentiment can drive investor optimism, leading to higher trading volumes.</li>
+</ul><h2>Time Series Patterns</h2>
+<ul>
+<li>Trend: Several series, such as "Tape A", "Tape B", and "Tape C", exhibit a general upward trend, indicating increasing trading volumes over time.</li>
+<li>Volatility: Platforms like "Nasdaq" and "ICE" demonstrate pronounced volatility, with several peaks and troughs throughout the observed period.</li>
+<li>Stability: Some series, such as "Other", remain relatively stable without significant changes in trading volume over time.</li>
+<li>Abrupt Changes: "Off Exchange" and "Market" display sharp drops at certain points, indicating specific events or shifts in the market dynamics.</li>
+<li>Some series, like "Tape B" and "Tape C", hint at possible seasonality, but it's not very pronounced.</li>
+</ul><h2>US Equities Trading Volume Vs Macro Patterns</h2>
+<ul>
+<li>The S&amp;P 500 index is positively correlated with trading volumes across most channels, especially with Tape A, Tape C, ICE, Nasdaq, Cboe, Other, and Off Exchange. The strongest positive correlation with the S&amp;P 500 is observed with the Other channel, suggesting when the stock market performs well, trading volume in the Other channel tends to increase and vice-versa.</li>
+<li>Notably, Tape B has almost no correlation with the S&amp;P 500, implying that factors affecting S&amp;P 500 might not have a significant impact on the trading volume in this channel.</li>
+<li>The Federal Funds Rate demonstrates a strong negative correlation with trading volumes across channels like Tape A, Tape C, ICE, Nasdaq, Cboe, and Off Exchange. This suggests when the interest rate increases (indicating a tighter monetary policy), trading volumes tend to decrease in these channels and vice-versa.</li>
+<li>Interestingly, the Other channel shows a milder negative correlation with the Federal Funds Rate compared to other channels.</li>
+<li>The Consumer Sentiment index, reflecting the degree of optimism or pessimism in the economy, has a negative correlation with trading volumes across most channels, with particularly strong correlations with Tape C, Nasdaq, and Off Exchange. This suggests that as consumer sentiment improves (indicating optimism), trading volumes in these channels tend to decrease and vice-versa.</li>
+</ul><h2>Same Market Correlation Between Various Channels</h2>
+<ul>
+<li>Tape A, B, C Correlations: Tape A and Tape C have a high positive correlation, suggesting that they often move in tandem. However, Tape B shows a weaker correlation with the other two, implying distinct factors might influence its trading volume.</li>
+<li>Trading volumes on ICE, Nasdaq, and Cboe are highly correlated, suggesting similar factors affect trading on these platforms. Moreover, the Off Exchange trading channel is highly correlated with Tape C, Nasdaq, and Market, highlighting its dependence on broader market trends.</li>
+<li>The Market column, representing the total number of trades in billions across all channels, exhibits a high positive correlation with channels like Tape A, Tape C, ICE, Nasdaq, and Off Exchange. This suggests that these channels significantly influence the overall market trading volume.</li>
+</ul><h2>US Fixed Income Trading Volume Analysis</h2><h2>Macro Factors Justification</h2>
+<ul>
+<li>10-Year Treasury Constant Maturity Rate (GS10):</li>
+<li>Explanation: This is the yield on US Treasury securities at a constant maturity of 10 years. It is a key indicator reflecting long-term interest rate expectations and is often used as a benchmark for other interest rates, including mortgage rates and bank loan rates.</li>
+<li>Rationale: Changes in the 10-year Treasury yield can influence the pricing and demand for other fixed income securities. As yields rise, newly issued bonds become more attractive than existing bonds with lower yields, impacting trading volumes.</li>
+<li>Effective Federal Funds Rate (FEDFUNDS):</li>
+<li>Explanation: This is the interest rate at which depository institutions trade federal funds (balances held at Federal Reserve Banks) with each other overnight. It is the main tool the Federal Reserve uses to influence monetary conditions and thereby affect economic activity.</li>
+<li>Rationale: The Federal Funds Rate is a short-term rate, and its movements can influence the entire yield curve. When the Federal Reserve changes its target for the Federal Funds Rate, it can affect trading volumes across various maturities in the fixed income market.</li>
+<li>Spread between 10-Year and 2-Year Treasury Constant Maturity (T10Y2Y):</li>
+<li>Explanation: This metric provides the yield curve spread between the 10-Year and 2-Year Treasury securities. It's an indicator of the shape of the yield curve and can hint at future economic conditions.</li>
+<li>Rationale: The yield curve, specifically the spread between long-term and short-term rates, offers insights into market expectations about future economic growth and inflation. A flattening or inverting yield curve can signal economic slowdowns or recessions, which can significantly impact trading volumes and strategies in the fixed income market.</li>
+</ul><h2>Time Series Patterns</h2>
+<ul>
+<li>Municipal, Treasury, and Corporate Debt securities display some seasonality, with noticeable peaks and troughs. Treasury trading volumes have increased significantly in recent years.</li>
+<li>Agency MBS and Non-Agency MBS show a downward trend for a period, followed by some stability. The Agency MBS trading volume has seen a rise in recent years.</li>
+<li>Federal Agency Securities trading volume has been fairly stable, with a slight increase in recent years.</li>
+<li>Asset-Backed securities' trading volume displays some volatility, with a noticeable peak in mid-2019.</li>
+<li>The Total trading volume, which represents the cumulative trading volume across all channels, indicates a significant increase in recent years, reflecting the growth in Treasury, Agency MBS, and other securities.</li>
+</ul><h2>Fixed Income Trading Vs Macro Patterns</h2>
+<ul>
+<li>GS10 (10-Year Treasury Constant Maturity Rate):</li>
+<li>This rate has a negative correlation with almost all fixed income securities. The negative values suggest that when the 10-Year Treasury Constant Maturity Rate increases, the trading volume of these securities tends to decrease, and vice versa.</li>
+<li>The strongest negative correlation is with Federal Agency Securities (−0.560), implying that these securities are particularly sensitive to changes in the 10-Year Treasury Constant Maturity Rate.</li>
+<li>FEDFUNDS (Effective Federal Funds Rate):</li>
+<li>Interestingly, the correlation between FEDFUNDS and most of the fixed income securities is negative, except for Non-Agency MBS and Federal Agency Securities, which show positive correlations. This could mean that trading volumes in these securities increase with rising federal funds rates.</li>
+<li>Non-Agency MBS has a positive correlation of 0.275, indicating its trading volume might move in the same direction as the federal funds rate.</li>
+<li>T10Y2Y (10-Year Treasury Constant Maturity Minus 2-Year Treasury Constant Maturity):</li>
+<li>This spread measures the difference between the 10-year and 2-year Treasury rates, often seen as an indicator of economic outlook.</li>
+<li>Most securities have a positive correlation with this measure, especially Asset-Backed securities, which have a correlation of 0.738. A higher spread (steepening yield curve) might suggest a positive economic outlook, and this could be related to increased trading in these securities.</li>
+</ul><h2>Correaltion with Securitues in the Same Market</h2>
+<ul>
+<li>The Total column gives a comprehensive view of the overall market. It has strong positive correlations with all securities, indicating that when trading volume in one security type increases, it's likely that the trading volume in other securities will also increase.</li>
+<li>Some strong positive correlations are observed between Municipal and Non-Agency MBS (0.985), Treasury and Agency MBS (0.990), and Treasury and Corporate Debt (0.993). This indicates that these pairs of securities often move in tandem in terms of trading volume.</li>
+<li>The securities Agency MBS and Non-Agency MBS show a strong positive correlation (0.946), suggesting they are traded in similar patterns.</li>
+</ul><h2>US SF Trading Volume Analysis</h2><h2>Macro Factors Justification</h2><ul>
+<li>Housing Market Indicators (e.g., Housing Starts):</li>
+<li>Explanation: Housing starts represent the number of new residential construction projects that have begun in a particular month. It serves as a leading indicator for the health of the housing market and, by extension, the performance of mortgage-backed structured products. A rise in housing starts can indicate a bullish outlook for the housing market, potentially leading to increased demand for related structured products.</li>
+<li>Rationale: Given the significance of mortgage-backed securities in the structured product landscape, housing market indicators like housing starts can provide valuable insights into future demand and performance of these securities.</li>
+<li>10-Year Treasury Rate:</li>
+<li>Explanation: The 10-Year Treasury Rate represents the yield or interest rate on a 10-year US government debt instrument. It serves as a benchmark for long-term interest rates and provides insights into investor sentiments about the economy. Changes in this rate can influence the pricing and demand for debt-based structured products.</li>
+<li>Rationale: Structured products, especially debt-based ones, are sensitive to changes in interest rates. As the 10-Year Treasury Rate moves, it can cause shifts in the demand and valuation of structured products whose performances are tied to interest rates.</li>
+<li>Credit Spreads (e.g., difference in yield between U.S. Treasuries and corporate bonds of the same maturity):</li>
+<li>Explanation: Credit spreads measure the difference in yield between two securities with differing credit qualities. A widening credit spread indicates that the market perceives higher risk in corporate bonds relative to risk-free government bonds. It can signal worsening credit conditions in the market.</li>
+<li>Rationale: A change in credit conditions, as indicated by credit spreads, can directly affect the pricing and demand for structured products, especially those with underlying assets sensitive to credit risk (like CDOs).</li>
+</ul><h2>Time Series Analysis</h2>
+<ul>
+<li>The volatility in securities like "CLO" and "RMBS (Private-Label)" is evident as they exhibit sharp rises and falls within short intervals.</li>
+<li>The majority of the securities exhibit a clear upward or downward trend over time. For instance, "Asset-Backed Securities" and "CLO" have been on a consistent upward trajectory.</li>
+<li>Some securities, such as "RMBS (Private-Label)", exhibit a noticeable downward trend over the years.</li>
+<li>There are securities like "CMBS (Private-Label)" that initially showed an upward trend but have recently exhibited a declining pattern.</li>
+</ul><h2>SF Volume Vs Macro Trends</h2>
+<ul>
+<li>Housing Starts: This is a leading indicator for the health of the housing market. From the correlation matrix, it appears to have a positive correlation with the 10-Year Treasury Rate (0.546032). This suggests that when housing starts increase, long-term interest rates tend to rise. This could be attributed to increased borrowing and economic activity driving up rates.</li>
+<li>10-Year Treasury Rate: This is a benchmark for long-term interest rates. Several structured finance products exhibit negative correlations with this rate, which suggests that as long-term interest rates rise, the trading volume or demand for these products decreases.</li>
+<li>Credit Spreads: This measures the difference in yield between two securities with differing credit qualities. From the matrix, it shows mixed correlations with various structured finance products. A significant positive or negative correlation with credit spreads could indicate that the particular product is sensitive to changes in credit conditions.</li>
+</ul><h2>Within Market Trends</h2>
+<ul>
+<li>Securities like Interdealer, Customer, and TOTAL exhibit high positive correlations with each other. This suggests that the trading volumes for these securities move in tandem.</li>
+<li>Agency CMO, Agency Specified Pool, Agency TBA, and TOTAL.1 all show high positive correlations, which indicates that they move together.</li>
+<li>On the other hand, securities such as Interdealer, Customer, and TOTAL have negative correlations with Agency CMO, Agency Specified Pool, Agency TBA, and ABS, suggesting they might move in opposite directions in response to market conditions.</li>
+</ul><h2>US Agency Trading Volume Analysis</h2><h2>Justification for Macro Measures</h2>
+<ul>
+<li>Mortgage Rates (e.g., 30-Year Fixed Rate Mortgage Average in the United States)</li>
+<li>Explanation: This rate reflects the average interest rate that borrowers pay when securing a 30-year fixed mortgage. As one of the most common mortgage products in the U.S., its rate directly impacts the demand for housing and the refinancing activity.</li>
+<li>Rationale: Changes in mortgage rates can influence the demand for securities issued by entities like Fannie Mae and Freddie Mac. As these rates decrease, refinancing activity often increases, leading to more issuance and potential trading volume of related securities.</li>
+<li>Housing Market Indicators (e.g., Housing Starts or New Private Housing Units Authorized)</li>
+<li>Explanation: Housing starts represent the number of new residential construction projects that have begun in a particular month. It's a leading indicator of the health of the housing market.</li>
+<li>Rationale: A surge in housing starts can indicate a bullish outlook for the housing market, potentially leading to increased demand for loans and, subsequently, securities from agencies like Fannie Mae and Freddie Mac.</li>
+<li>Credit Spreads (e.g., difference in yield between U.S. Treasuries and corporate bonds of the same maturity)</li>
+<li>Explanation: Credit spreads measure the perceived risk of corporate bonds relative to risk-free government bonds. A widening credit spread indicates that the market sees higher risk in corporate bonds.</li>
+<li>Rationale: Changes in credit spreads can indicate shifts in investor risk appetite. If investors are shying away from corporate bonds and looking for safer assets, they might turn to agency securities, which, although not risk-free, are perceived as safer than corporate bonds due to the implicit government backing of agencies like Fannie Mae and Freddie Mac.</li>
+</ul><h2>Time Series Patterns</h2>
+<ul>
+<li>All the securities dropped from peaks in 2012 and 2011 to the lowest observable values in 2015 and 2016</li>
+<li>Post that there has been uptick in the volumes and it showing recovery, although many have not breached the 2012 level, the other source did do that</li>
+<li>Overall the total sf volume has seen a major correction since 2012 has been moving sidewards slowly building momentum and 2020 saw a rise in the total sf volume</li>
+</ul><h2>Agency Trading Volume Vs Macro</h2>
+<ul>
+<li>Fannie Mae, Freddie Mac, and the Total Agency Trading Volume have positive correlations with Housing Starts. This suggests that when new housing projects begin, the trading volume for these agencies tends to increase.</li>
+<li>FHLB and 'Other' Agency securities have negative correlations with Housing Starts, but it's mild.</li>
+<li>Fannie Mae, FHLB, and 'Other' Agency securities have negative correlations with the 30-Year Mortgage Rate. As the 30-year mortgage rate increases, the trading volume for these agencies seems to decrease. It's especially strong for FHLB.</li>
+<li>Freddie Mac and the Total have mild positive correlations with the 30-Year Mortgage Rate.</li>
+<li>All Agency securities, especially Fannie Mae, FHLB, and Freddie Mac, have strong positive correlations with the Delinquency Rate. This suggests that as more people default on their loans, the trading volume for these agencies tends to increase.</li>
+</ul><h2>Agency Securities Patterns</h2>
+<ul>
+<li>Fannie Mae, Freddie Mac, and the Total have strong positive correlations with each other, suggesting that they often move in tandem in the market.- </li>
+<li>FHLB has a relatively weaker correlation with Fannie Mae and Freddie Mac but has a strong positive correlation with 'Other' securities.</li>
+<li>'Other' securities have moderate positive correlations with all the other securities.</li>
+</ul><h2>US Corporate Bond Trading Volume Analysis</h2><h2>Justification For Macro Measures</h2>
+<ul>
+<li>Federal Funds Rate:</li>
+<li>Explanation: The Federal Funds Rate is the interest rate at which depository institutions lend reserve balances to other depository institutions overnight. It's essentially the short-term interest rate set by the Federal Reserve.</li>
+<li>Rationale: When the Federal Reserve raises or lowers the Federal Funds Rate, it typically has a domino effect on interest rates across the economy, including the yields on corporate bonds. A rise in the Federal Funds Rate could lead to higher borrowing costs for companies and potentially affect the demand and pricing of corporate bonds.</li>
+<li>Gross Domestic Product (GDP):</li>
+<li>Explanation: GDP is the total value of goods produced and services provided in a country during one year. It's a primary indicator of the health of a country's economy.</li>
+<li>Rationale: When the GDP is growing, the economy is in good shape, and the nation is moving forward. This can mean that corporations are performing well, leading to increased investor confidence in corporate bonds. Conversely, a declining GDP can signal economic downturns, potentially making corporate bonds riskier.</li>
+<li>Corporate Profits After Tax:</li>
+<li>Explanation: This metric represents the net income of corporations in the U.S. after all taxes have been paid. It's an indicator of the overall profitability of the corporate sector.</li>
+<li>Rationale: The health of the corporate sector is directly related to the performance of corporate bonds. If corporations are profitable, they are more likely to meet their debt obligations, making their bonds more attractive to investors. On the other hand, declining corporate profits can be a warning sign for corporate bondholders as it might indicate increased credit risk.</li>
+</ul><h2>Time Series Analysis</h2>
+<ul>
+<li>Generally Speaking the Volume of Corporate Debt across various Segments has increased </li>
+<li>Two Time periods in whcich we see prominent decline are 2008 and 2020 which indicate the Financial Crisis and Covid-19 Post 2008 it took a while for the Debt to reach 2008 levels and after 2020 when the FED lowered interest rates we see borrowing go up</li>
+</ul><h2>US Marketable Treasury Issuance, Outstanding, and Interest Rates</h2><h2>Justification for Macro Measures</h2>
+<ul>
+<li>U.S. Government Budget Deficit or Surplus (FYFSD):</li>
+<li>Explanation: This measures the difference between the federal government's income (mainly taxes) and its spending. A deficit occurs when spending exceeds income, while a surplus happens when income exceeds spending.</li>
+<li>Rationale: A growing deficit could lead to an increase in the issuance of U.S. Treasuries since the government may issue more debt to finance the deficit. This measure can provide context on why there might be fluctuations in the issuance data.</li>
+<li>Real Gross Domestic Product (GDPCA):</li>
+<li>Explanation: Real GDP represents the total value of all goods and services produced in an economy, adjusted for inflation. It's a primary indicator of an economy's health and growth.</li>
+<li>Rationale: Economic growth (or lack thereof) can influence government spending and revenue collection. In a booming economy, tax revenues might increase (reducing the need for debt), whereas in a recession, government might increase spending (potentially financed by more debt) to stimulate the economy.</li>
+<li>10-Year Treasury Constant Maturity Rate (GS10):</li>
+<li>Explanation: This represents the yield or interest rate on a 10-year U.S. government debt instrument. It serves as a benchmark for long-term interest rates and provides insights into investor sentiments about the economy.</li>
+<li>Rationale: The yield on 10-year Treasuries can provide context about how investors view the risk of U.S. government debt and the overall economic outlook. It can also indicate the cost of borrowing for the government. A rising yield might indicate increasing skepticism about the U.S. government's fiscal position or concerns about inflation.</li>
+</ul><h2>Time Series Patterns</h2>
+<ul>
+<li>There seems to be a significant increase in the issuance of most instruments post-2008, likely due to the financial crisis and subsequent quantitative easing measures by the Federal Reserve.</li>
+<li>The issuance of CMBs, 4-Week, and 2-Year notes, for instance, has shown significant fluctuations over the years.</li>
+<li>Instruments like TIPS have seen an increase in issuance over the 20-year span.</li>
+<li>A sharp decline is observed in the issuance of Bills_Total, Notes_Total, and Bonds_Total around 2008, and then a subsequent rise.</li>
+<li>The total issuance (Total column) reflects the summative trend of all the individual instruments, showing a dip around 2008 and an increase afterwards.</li>
+</ul><h2>Macro Vs Treasury Issuance</h2>
+<ul>
+<li>Bills_Total, 2-Year, FRNs, Notes_Total, and Bonds_Total show significant negative correlations with the 10-Year Treasury Rate and Real GDP. This suggests that as these macro indicators increase, the values of these securities tend to decrease.</li>
+<li>Bills_Total, 2-Year, 3-Year, 5-Year, 7-Year, 10-Year, FRNs, TIPS Notes, Notes_Total, 30-Year, and Bonds_Total show negative correlations with the Budget Deficit/Surplus, implying a decrease in their value with an increase in the deficit (or a decrease in the surplus).</li>
+</ul><h2>Correaltion for Intra Issuance</h2>
+<ul>
+<li>The shorter-term securities (4-Week, 8-Week, 13-Week, 26-Week, and 52-Week) exhibit strong positive correlations with each other.</li>
+<li>Notes_Total, which aggregates several securities, tends to have strong correlations with its constituent securities (2-Year, 3-Year, 5-Year, 7-Year, 10-Year, and FRNs).</li>
+<li>Bonds_Total, which aggregates bonds, shows strong positive correlations with the 20-Year and 30-Year bonds, as expected.</li>
+<li>Total, which aggregates all securities, tends to have moderate to strong correlations with most individual securities.</li>
+</ul><h2>US Treasury Outstanding</h2><h2>Justification for Macros</h2>
+<ul>
+<li>Real GDP (Gross Domestic Product):</li>
+<li>Explanation: Real GDP represents the total value of goods and services produced in a country, adjusted for inflation. It is a key measure of a nation's economic health and provides insights into the overall growth or contraction of an economy.</li>
+<li>Rationale for Selection: The health of the economy directly influences the government's capacity to service its debt. A growing economy can generate higher tax revenues, making it easier for the government to meet its obligations. Conversely, in a shrinking economy, the government may need to issue more debt to finance its activities, thus potentially increasing the Treasury Outstanding.</li>
+<li>Budget Deficit/Surplus:</li>
+<li>Explanation: A budget deficit occurs when government expenditures exceed its revenues. A surplus is the opposite, with revenues exceeding expenditures.</li>
+<li>Rationale for Selection: The budgetary position of the government has a direct bearing on its borrowing needs. A deficit might necessitate additional borrowing, leading to an increase in the Treasury Outstanding, whereas a surplus might allow the government to reduce its outstanding debt.</li>
+<li>10-Year Treasury Rate:</li>
+<li>Explanation: The 10-Year Treasury Rate is the yield or interest rate offered on a 10-year U.S. government bond. It is closely watched as an indicator of broader investor sentiment and can signal expectations about future economic growth and inflation</li>
+<li>Rationale for Selection: The yield on the 10-Year Treasury can influence the cost of borrowing for the government. A higher yield might indicate that investors see higher risks and thus demand a higher return for holding government debt. The rate can also influence the attractiveness of new government bonds compared to existing ones. If rates rise significantly, it could increase the cost of servicing the debt for the government, potentially influencing the total amount of debt the government might choose to issue.</li>
+</ul><h2>Time Series Analysis</h2>
+<ul>
+<li>We genearly see an upward trend as time passes buy in outstading treasury volume</li>
+<li>It means that the US Govt is issuing more Debt Than ever and investors both retail and institutional want to invest in it</li>
+</ul><h2>Macro Vs Treasury Outstanding</h2>
+<ul>
+<li>Real GDP: This seems to have a moderate positive correlation with several securities like 'Total', 'Bills_Total', and 'Notes_Total', suggesting that when new residential constructions start, the demand or performance of these securities might increase.</li>
+<li>30-Year Mortgage Rate: There's a noticeable negative correlation with 'Total', 'Bills_Total', and 'Notes_Total'. This suggests that when the mortgage rates go up, the performance or demand for these securities might decrease.</li>
+<li>Budget Deficit: There's a strong negative correlation with 'Total', 'Bills_Total', 'Notes_Total', and 'Bonds_Total'. This could be indicative of the fact that a rising deficit might be leading to reduced demand or performance in these securities.</li>
+</ul><h2>Intra Market Correlation</h2>
+<ul>
+<li>Securities like 'Total', 'Bills_Total', 'Notes_Total', and 'Bonds_Total' have high positive correlations with each other. This suggests that their market movements are quite interlinked and they might be influenced by similar market conditions or factors.</li>
+</ul><h2>US MBS Issuance and Outstanding</h2><h2>Justification for Macro Measures</h2>
+<ul>
+<li>Housing Starts:</li>
+<li>Explanation: Housing starts represent the number of new residential construction projects that have begun in a given period, typically measured monthly. It's an indicator of the health of the housing market and the broader economy.</li>
+<li>Rationale for Selection: Housing starts are directly related to the demand for mortgages. As more homes are built, more mortgages are typically issued. An increase in housing starts can signal an uptick in MBS issuance as new mortgages get pooled and sold as securities. Conversely, a decrease might suggest a potential slowdown in MBS issuance.</li>
+<li>30-Year Mortgage Rate:</li>
+<li>Explanation: The 30-Year Mortgage Rate is the interest rate for a 30-year fixed-rate mortgage. It reflects the cost of borrowing for homebuyers and is influenced by broader economic factors including inflation expectations, general economic conditions, and monetary policy.</li>
+<li>Rationale for Selection: The 30-Year Mortgage Rate can influence the demand for homes and, by extension, the demand for mortgages. Lower rates typically make borrowing cheaper, potentially boosting housing demand and leading to more mortgages being issued and thus potentially more MBS issuance. Higher rates can have the opposite effect, slowing down the housing market and reducing MBS issuance.</li>
+<li>Delinquency Rates:</li>
+<li>Explanation: Delinquency rates measure the percentage of loans that are overdue in payments. It's a key indicator of the health of the credit market and the financial well-being of borrowers.</li>
+<li>Rationale for Selection: High delinquency rates can be a red flag for MBS investors, signaling that the underlying mortgages in the securities are at higher risk of default. This can impact the attractiveness of MBS to investors and influence the pricing and issuance of new MBS. Conversely, low delinquency rates suggest that most borrowers are keeping up with their payments, making MBS a more attractive investment option.</li>
+</ul><h2>Time Series Patterns</h2>
+<ul>
+<li>There's a sharp decline in these securities during the 2008 period</li>
+<li>Post that all the segements have seen growth</li>
+<li>However this growth seems to taper off due to the high inflation and QE post covid</li>
+</ul><h2>MBS Issuance Vs Macro</h2>
+<ul>
+<li>Housing Starts vs MBS Issuance: There's a positive correlation between Housing Starts and most of the MBS issuance columns. When housing starts increase, it indicates an uptick in the housing market, which naturally translates into more mortgage-backed securities being issued.</li>
+<li>30-Year Mortgage Rate vs MBS Issuance: The relationship here is a bit more nuanced. Generally, as mortgage rates rise, the cost of borrowing increases, which might deter new home purchases and refinancing. This could potentially lead to a decrease in MBS issuance. However, other economic factors also play a role, and the relationship might not always be strictly inverse.</li>
+<li>Delinquency Rate vs MBS Issuance: A higher delinquency rate generally indicates that more borrowers are behind on their mortgage payments, which can be a negative indicator for the housing market and MBS issuance. If delinquencies rise significantly, it could lead to a decrease in MBS issuance as the perceived risk increases.</li>
+</ul><h2>Intra Market Correaltion</h2>
+<ul>
+<li>MBS and CMO: Positive correlation (0.6470). This suggests that movements in MBS issuance are often mirrored by movements in CMO issuance.</li>
+<li>MBS and CMBS: Slight negative correlation (-0.0638). The relationship between MBS and CMBS issuance is weak.</li>
+<li>MBS and RMBS: Negative correlation (-0.1016). This suggests that when MBS issuance increases, RMBS issuance tends to decrease and vice versa.</li>
+<li>MBS and Agency: Very strong positive correlation (0.9897). This indicates that MBS and Agency securities move almost in tandem.</li>
+</ul><h2>US MBS Outstanding</h2><h2>Justification for Macro Measures</h2>
+<ul>
+<li>Housing Starts:</li>
+<li>Explanation: Housing starts represent the number of new residential construction projects that have begun in a given period, typically measured monthly. It's an indicator of the health of the housing market and the broader economy.</li>
+<li>Rationale for Selection: Housing starts are directly related to the demand for mortgages. As more homes are built, more mortgages are typically issued. An increase in housing starts can signal an uptick in MBS issuance as new mortgages get pooled and sold as securities. Conversely, a decrease might suggest a potential slowdown in MBS issuance.</li>
+<li>30-Year Mortgage Rate:</li>
+<li>Explanation: The 30-Year Mortgage Rate is the interest rate for a 30-year fixed-rate mortgage. It reflects the cost of borrowing for homebuyers and is influenced by broader economic factors including inflation expectations, general economic conditions, and monetary policy.</li>
+<li>Rationale for Selection: The 30-Year Mortgage Rate can influence the demand for homes and, by extension, the demand for mortgages. Lower rates typically make borrowing cheaper, potentially boosting housing demand and leading to more mortgages being issued and thus potentially more MBS issuance. Higher rates can have the opposite effect, slowing down the housing market and reducing MBS issuance.</li>
+<li>Delinquency Rates:</li>
+<li>Explanation: Delinquency rates measure the percentage of loans that are overdue in payments. It's a key indicator of the health of the credit market and the financial well-being of borrowers.</li>
+<li>Rationale for Selection: High delinquency rates can be a red flag for MBS investors, signaling that the underlying mortgages in the securities are at higher risk of default. This can impact the attractiveness of MBS to investors and influence the pricing and issuance of new MBS. Conversely, low delinquency rates suggest that most borrowers are keeping up with their payments, making MBS a more attractive investment option.</li>
+</ul><h2>Time Series Patterns</h2>
+<ul>
+<li>Overall Growth: There is a general upward trend in most of the MBS types from around 2000 until the 2008 financial crisis. After the crisis, there is a noticeable decline or stabilization in most series, especially Non-Agency MBS.</li>
+<li>Financial Crisis Impact: The 2008 financial crisis clearly affected the MBS market. The Non-Agency MBS, in particular, shows a sharp decline around this period, reflecting the distress in non-agency mortgages and the broader housing market crash.</li>
+<li>Agency vs. Non-Agency: Agency MBS shows consistent growth over the years, indicating a shift of mortgage securitization towards government-sponsored entities (like Fannie Mae and Freddie Mac) post the 2008 crisis.</li>
+<li>CMBS: Commercial Mortgage Backed Securities (CMBS) also show a decline around the 2008 period, followed by a recovery and then a plateau.</li>
+</ul><h2>MBS Outstanding Vs Macro</h2>
+<ul>
+<li>MBS and Housing Starts: There's a negative correlation of -0.4371. This means as Housing Starts increase, the outstanding MBS tends to decrease. This could indicate a decrease in new mortgages being securitized when housing construction is booming.</li>
+<li>MBS and 30-Year Mortgage Rate: There's a strong negative correlation of -0.8451 between MBS outstanding and the 30-year mortgage rate. As the rate increases, the MBS outstanding decreases, suggesting that higher mortgage rates could lead to fewer mortgages being securitized.</li>
+<li>MBS and Delinquency Rate: There's a positive correlation of 0.2140. This indicates that as the delinquency rate increases, so does the outstanding MBS. A higher delinquency rate might lead to more mortgages being defaulted and therefore staying on the MBS books longer, leading to a higher outstanding amount.</li>
+</ul><h2>MBS Market Correaltion</h2>
+<ul>
+<li>MBS and CMO: Positive correlation (0.3112). This indicates that as MBS outstanding increases, CMOs outstanding also tend to increase, albeit not as strongly.</li>
+<li>MBS and CMBS: Positive correlation (0.2071). This suggests a weaker relationship between outstanding MBS and CMBS.</li>
+<li>MBS and RMBS: Negative correlation (-0.5365). This indicates that movements in MBS outstanding tend to be in the opposite direction of RMBS outstanding.</li>
+<li>MBS and Agency: Very strong positive correlation (0.9965). This suggests that MBS and Agency securities move almost in tandem, indicating they are very closely related in the market.</li>
+</ul><h2>US ABS Issuance and Outstanding</h2><h2>Justification for Macros</h2>
+<ul>
+<li>PCECA (Personal Consumption Expenditures with Chain-type Price Index):</li>
+<li>Explanation: PCECA measures the value of the goods and services purchased by, or on the behalf of, U.S. residents. It provides insights into consumer spending habits, which is a critical component of the U.S. economy. The chain-type price index adjusts for inflation, allowing for a real understanding of consumption growth.</li>
+<li>Rationale for ABS: Consumer spending can directly influence the performance of many asset-backed securities, especially those tied to consumer loans, auto loans, credit cards, and more. If consumer spending is robust, it might indicate that borrowers are in a better financial position to service their debts, potentially reducing the risk for ABS tied to such debts.</li>
+<li>UNRATE (Unemployment Rate):</li>
+<li>Explanation: The unemployment rate represents the percentage of the labor force that is jobless but seeking employment. It's a primary indicator of labor market health.</li>
+<li>Rationale for ABS: A rising unemployment rate can signal economic distress, which can lead to increased defaults on loans that back ABS, such as auto loans or credit card debt. Conversely, a decreasing unemployment rate can indicate economic health, suggesting a potentially lower risk of default on such loans.</li>
+<li>TOTALSL (Total Consumer Credit Owned and Securitized):</li>
+<li>Explanation: This metric gauges the total amount of consumer credit outstanding that's either owned or securitized. It gives a broad view of consumer indebtedness in the economy.</li>
+<li>Rationale for ABS: ABS are often backed by pools of consumer loans. Thus, trends in total consumer credit can provide insights into the potential supply of new ABS issuance and the overall health of the consumer credit market. A rapid increase in consumer credit might indicate higher borrowing (and potentially higher risk), while stable or decreasing levels might suggest more conservative borrowing behavior.</li>
+</ul><h2>Time Seies Pattenrs</h2>
+<ul>
+<li>Overall Trend: There seems to have been a sharp decline around 2008-2009, likely due to the financial crisis, after which there was a recovery.</li>
+<li>Credit Card and Auto Loans: The issuance of credit card and auto loans ABS seems to be relatively stable and follows similar trends. Both experienced a dip around the 2008-2009 financial crisis but recovered afterward.</li>
+<li>Student Loans: The issuance of student loans ABS saw a significant decline post-2008 and hasn't recovered to its pre-2008 levels.</li>
+<li>Other: This category seems to have the most volatility, with sharp rises and falls throughout the timeline.</li>
+</ul><h2>ABS Issuance Vs Macro and Intra Market Correlation</h2>
+<ul>
+<li>In all the cases we that there is huge dip in both Macros and all ABS issuances in and arround 2008</li>
+<li>When there is an economic downturn and unemployment rates are varying ABS tends to go the opposite way due to reduced discretionary spending and lower levels of economic activity</li>
+<li>The correlation with Equipment ABS (0.899) and Other ABS (0.864) is very high, suggesting that changes in the auto ABS market often move in tandem with these markets.</li>
+<li>Auto ABS has a strong positive correlation with PCECA (0.890) and TOTALSL (0.885), implying that when personal consumption expenditure and total consumer credit increase, the issuance in the auto ABS market also tends to rise.</li>
+<li>There's a negative correlation with UNRATE (-0.289), indicating that higher unemployment rates might be associated with decreased activities in the auto ABS market.</li>
+<li>CDO/CLO ABS: This has a very high correlation with the Total ABS market (0.954), suggesting that the CDO/CLO market plays a significant role in the overall ABS market.</li>
+<li>It has a negative correlation with UNRATE (-0.428), suggesting that higher unemployment rates could impact the CDO/CLO ABS market adversely.</li>
+<li>Credit Cards ABS: This has a positive correlation with Student Loans ABS (0.677), indicating they might be influenced by similar economic factors.</li>
+<li>It has a weak positive correlation with PCECA (0.208) and a weak negative correlation with UNRATE (-0.360).</li>
+<li>PCECA (Personal Consumption Expenditure) has a very high correlation with TOTALSL (0.996), which is expected since they both relate to consumer spending and credit.</li>
+<li>The negative correlation between most ABS securities and UNRATE suggests that higher unemployment rates might have adverse effects on the ABS market.</li>
+</ul><h2>US ABS Outstanding</h2><h2>Justification for Macros</h2>
+<ul>
+<li>PCECA (Personal Consumption Expenditures with Chain-type Price Index):</li>
+<li>Explanation: PCECA measures the value of the goods and services purchased by, or on the behalf of, U.S. residents. It provides insights into consumer spending habits, which is a critical component of the U.S. economy. The chain-type price index adjusts for inflation, allowing for a real understanding of consumption growth.</li>
+<li>Rationale for ABS: Consumer spending can directly influence the performance of many asset-backed securities, especially those tied to consumer loans, auto loans, credit cards, and more. If consumer spending is robust, it might indicate that borrowers are in a better financial position to service their debts, potentially reducing the risk for ABS tied to such debts.</li>
+<li>UNRATE (Unemployment Rate):</li>
+<li>Explanation: The unemployment rate represents the percentage of the labor force that is jobless but seeking employment. It's a primary indicator of labor market health.</li>
+<li>Rationale for ABS: A rising unemployment rate can signal economic distress, which can lead to increased defaults on loans that back ABS, such as auto loans or credit card debt. Conversely, a decreasing unemployment rate can indicate economic health, suggesting a potentially lower risk of default on such loans.</li>
+<li>TOTALSL (Total Consumer Credit Owned and Securitized):</li>
+<li>Explanation: This metric gauges the total amount of consumer credit outstanding that's either owned or securitized. It gives a broad view of consumer indebtedness in the economy.</li>
+<li>Rationale for ABS: ABS are often backed by pools of consumer loans. Thus, trends in total consumer credit can provide insights into the potential supply of new ABS issuance and the overall health of the consumer credit market. A rapid increase in consumer credit might indicate higher borrowing (and potentially higher risk), while stable or decreasing levels might suggest more conservative borrowing behavior.</li>
+</ul><h2>Time Series patterns</h2>
+<ul>
+<li>Auto: The Auto market has seen various ups and downs with a noticeable dip around 2008, which is likely due to the global financial crisis. The market recovered in subsequent years, reaching a peak in 2015, and then witnessing a slight decline.</li>
+<li>Card: The Card market followed a similar trend to the Auto market with a clear dip around 2008 and recovery thereafter. The market has been relatively stable post-2015.</li>
+<li>Equipment: The Equipment market, while having smaller volumes than the Auto and Card markets, has shown steady growth since the 2008 dip.</li>
+<li>Other: This market has seen significant variability over the years. There was a drop in 2008, a sharp increase around 2010, followed by a decline, and then another uptick around 2017.</li>
+<li>Total: The total Asset Backed Securities Outstanding reflects the combined trends of the individual markets. There is a clear dip in 2008 and a general upward trend thereafter.</li>
+<li>Patterns:</li>
+<li>The influence of the 2008 global financial crisis is evident across all markets, highlighting the systemic effects of such major economic events.</li>
+<li>Most markets seem to have recovered after the 2008 crisis and showed growth. The "Other" market seems to have more pronounced cyclical patterns.</li>
+</ul><h2>Macro Vs ABS Outstanding and Intra Market Correaltion</h2>
+<ul>
+<li>Auto vs. PCECA: A strong positive correlation of 0.890368 suggests that as personal consumption expenditure (PCECA) rises, the outstanding amounts for Auto ABS also tend to increase. This makes intuitive sense, as higher consumer spending might lead to increased car purchases and thus more auto loans.</li>
+<li>Auto vs. UNRATE: There's a negative correlation of -0.289107, indicating that higher unemployment rates might lead to a reduction in Auto ABS outstanding. This is expected since higher unemployment can reduce consumer purchasing power and confidence, leading to fewer auto loans.</li>
+<li>Auto vs. TOTALSL: A strong positive correlation of 0.885127 indicates that as the total consumer credit increases, the outstanding amounts for Auto ABS also tend to rise. This means that overall consumer borrowing and spending habits are closely tied to auto loan borrowings.</li>
+<li>Auto and Equipment: The correlation of 0.899039 indicates a strong relationship. It suggests that the trends in Auto ABS outstanding often move in tandem with Equipment ABS outstanding. Both are types of asset-backed securities and may react similarly to economic conditions.</li>
+<li>Auto and Other: A correlation of 0.863936 shows a strong positive relationship, implying that movements in Auto ABS outstanding often align with the "Other" category of ABS.</li>
+<li>CDO/CLO and Total: The correlation of 0.953704 is very high, suggesting that CDO/CLO securities form a significant portion of the total ABS outstanding in the market.</li>
+<li>Credit Cards and Student Loans: A correlation of 0.677110 indicates a moderate to strong relationship. This suggests that there may be common economic factors influencing the demand or supply for both credit card and student loan-backed securities.</li>
+</ul><h2>US Fixed Income Issuance and Outstanding</h2><h2>Justification for Macros</h2>
+<ul>
+<li>Federal Funds Rate (FEDFUNDS):</li>
+<li>Explanation: The Federal Funds Rate is the interest rate at which depository institutions lend reserve balances to other depository institutions overnight on an uncollateralized basis. It's essentially the overnight lending rate between banks.</li>
+<li>Rationale: The Federal Funds Rate is a primary tool used by the Federal Reserve to implement monetary policy. It affects general interest rate levels, which can influence borrowing costs for corporations. When the rate is low, corporations might be more inclined to issue debt because it's cheaper to borrow. Conversely, a high rate might discourage issuances.</li>
+<li>Real Gross Domestic Product (GDPC1):</li>
+<li>Explanation: Real GDP measures the value of all finished goods and services produced within a country's borders in a specific time period and is adjusted for inflation. It provides a broad overview of the health and performance of the national economy.</li>
+<li>Rationale: A growing GDP often signifies an expanding economy, which can correlate with increased corporate profits, expansions, and mergers—all of which can lead to increased fixed income issuance as companies seek capital to fund these ventures. On the other hand, a contracting GDP might signal an economic downturn, potentially leading to reduced issuances.</li>
+<li>Corporate Profits After Tax:</li>
+<li>Explanation: This measures the net income of corporations in the U.S. after all taxes have been deducted.</li>
+<li>Rationale: Corporate profits are a primary indicator of the business sector's health. High after-tax profits might mean companies have ample internal funding, potentially reducing the need to raise external capital through fixed income issuance. Conversely, when profits are low, companies might turn to debt issuance to fund operations, capital expenditures, or other investments.</li>
+</ul><h2>Time Series Pattenrs</h2>
+<ul>
+<li>Overall, there's a general upward trend in most of the series, suggesting a growth in the US Fixed Income Outstanding over time. This could be due to various factors such as economic expansion, increased borrowing, and more.</li>
+<li>Some series, like 'Commercial Paper' and 'Repos', display more volatility, with noticeable peaks and troughs.</li>
+<li>The series 'Agency- &amp; GSE-Backed Securities' displays a significant increase from around 2008 onwards, which can be associated with the financial crisis and the subsequent measures taken by GSEs and the government.</li>
+<li>Open Market Paper' and 'Federal Funds' show relatively stable trends with minor fluctuations.</li>
+</ul><h2>Macro and Intra Market Pattens</h2>
+<ul>
+<li>Federal Funds Rate (FEDFUNDS) Correlation: Most securities have a negative correlation with the federal funds rate (FEDFUNDS).</li>
+<li>This indicates that as the federal funds rate increases, the issuance of these securities tends to decrease and vice versa.</li>
+<li>Real Gross Domestic Product (GDPC1) Correlation: The correlation with real GDP (GDPC1) is mostly negative for the securities.</li>
+<li>This suggests that as the GDP grows, the issuance of these securities tends to decrease.</li>
+<li>The securities AUTO, CREDITCARD, and STUDENT exhibit similar patterns when compared against the macroeconomic indicators.</li>
+<li>TOTAL and OTHER securities also show similar trends, especially with respect to FEDFUNDS and GDPC1.</li>
+</ul><h2>Maro and Intra Market Pattens</h2>
+<ul>
+<li>There's a notable negative correlation between the Federal Funds Rate and most securities in the fixed income market. This makes sense as when interest rates are higher, borrowing costs are also higher which can lead to less issuance in these markets.</li>
+<li>A strong positive correlation exists between GDPC1 and most securities, indicating that as the economy grows (GDP increases), there's a rise in the issuance of these securities. This is expected as a booming economy often leads to more investments and borrowing.</li>
+<li>Corporate Profits (CP): This indicator also shows a positive correlation with most securities. As company profits increase, it may lead to more investments in the fixed income market either due to more companies issuing bonds or due to increased investor confidence in the market.</li>
+<li>Municipal vs Mortgage-Related: There's a very strong positive correlation (0.98) between these two securities.</li>
+<li>Corporate Debt vs Total: There's a strong positive correlation of 0.995, indicating that the overall trend in the total fixed income issuance is heavily influenced by corporate debt.</li>
+<li>Asset-Backed vs Mortgage-Related: A high positive correlation (0.9767) suggests that trends in mortgage-related securities issuance closely follow trends in asset-backed securities issuance.</li>
+</ul><h2>US ABCP and CP Outstanding</h2><h2>Macro and Intra Market Patterns</h2>
+<ul>
+<li>ABCP is positively correlated with CP. This means that as the Commercial Paper outstanding increases, the Asset-Backed Commercial Paper outstanding also tends to increase, and vice-versa.</li>
+<li>ABCP has a strong negative correlation with the Federal Funds Rate. This suggests that as interest rates rise, the volume of ABCP might decrease. A higher interest rate might deter companies from issuing short-term debt, such as ABCP.</li>
+<li>ABCP is positively correlated with GDP. Economic growth (rise in GDP) might boost corporate activities, leading to a rise in short-term borrowings using ABCP.</li>
+<li>ABCP has a positive correlation with Corporate Profits. When companies are more profitable, they might have more operations requiring short-term financing, which could lead to more ABCP issuance.</li>
+<li>The strongest positive correlation within the assets is between ABCP and CP, indicating that movements in one might predict movements in the other.</li>
+<li>ABCP's correlation with the Federal Funds Rate is the most negative among the indicators. This suggests that interest rates have a significant inverse effect on ABCP issuance.</li>
+</ul><h2>Macro and Intra Market Patterns</h2>
+<ul>
+<li>The Non-Financial Commercial Paper has a positive correlation with the Federal Funds Rate (FEDFUNDS) and Business Loans (BUSLOANS), and a negative correlation with the Financial Stress Index (STLFSI).</li>
+<li>Financial Commercial Paper shows the opposite relationship. It's negatively correlated with FEDFUNDS and BUSLOANS and positively correlated with STLFSI.</li>
+<li>ABCP, similar to Financial Commercial Paper, is negatively correlated with FEDFUNDS and BUSLOANS and positively correlated with STLFSI.</li>
+<li>Other vs. Macro-Indicators: This category mirrors the Non-Financial Commercial Paper in terms of correlation with the macro-indicators.</li>
+<li>Total vs. Macro-Indicators: The total Commercial Paper outstanding shows a similar pattern as Financial Commercial Paper and ABCP with the macro-indicators.</li>
+<li>There is a perfect negative correlation between Financial and Non-Financial Commercial Paper, suggesting that when one category increases, the other tends to decrease by a similar magnitude.</li>
+<li>ABCP and Financial Commercial Paper have a perfect positive correlation, suggesting they tend to move in tandem.</li>
+<li>The "Total" seems to be highly influenced by the Financial and ABCP categories, given its perfect correlation with them.</li>
+</ul><h2>US Municipal Issuance</h2><ul>
+<li>Federal Funds Rate (FEDFUNDS): The correlation coefficient of -0.57 indicates a moderate negative correlation with corporate bond issuances. This is consistent with the understanding that higher interest rates (or borrowing costs) might deter companies from issuing new debt.</li>
+<li>Financial Stress Index (STLFSI): With a correlation coefficient of -0.78, there's a strong negative relationship between the Financial Stress Index and corporate bond issuance. This suggests that when the financial market is stressed, corporate bond issuances decrease. A higher stress index indicates more stress in the financial markets, which could mean unfavorable conditions for issuing debt.</li>
+<li>Commercial and Industrial Loans (BUSLOANS): The correlation coefficient of 0.96 indicates a very strong positive correlation. This means that when corporate bond issuances are high, commercial and industrial loans are also high. Both instruments are ways for companies to obtain financing, and this correlation might indicate a broader trend in corporate financing activities.</li>
+<li>Asset-Backed Commercial Paper (ABCP): A positive correlation coefficient of 0.60 suggests that there's a tendency for both corporate bond issuances and ABCP to move in the same direction. When corporate bond issuance is high, ABCP issuance also tends to be high.</li>
+<li>Commercial Paper (CP): With a correlation coefficient of 0.82, there's a strong positive correlation. This indicates that corporate bond issuances and commercial paper issuances often move in tandem.</li>
+<li>Agency Debt (AGENCY): A coefficient of -0.63 indicates a moderate negative correlation. This might suggest that there's an inverse relationship between corporate bond issuances and agency debt. When one is high, the other tends to be lower.</li>
+</ul><h2> Explanation of the three economic indicators that I chose and the rationale for selecting them </h2>
+<p> I have chosen the same economic indicators from the FRED dataset using the FRED api to correlate with the crypto market, since it is the same asset class unlike the other market data in SIFMA, so without having to repeat myself i will mention the explanation here which is applicable for all the further analysis that i will be doing moving forward </p>
+<ul>
+    <li><strong>GS10 (10-Year Treasury Constant Maturity Rate):</strong>
+        <ul>
+            <li><strong>Explanation & Rationale:</strong> The GS10 represents the return on a 10-year treasury bond
+                issued by the United States government and serves as a proxy
+                for long-term interest rates. Changes in the GS10 can alter investor perceptions of traditional finance
+                vs the crypto
+                sector.</li>
+            <li>A rising GS10 rate may indicate a better economic outlook, perhaps diverting investors away from riskier
+                assets like
+                cryptocurrency.</li>
+            <li>A falling rate, on the other hand, may indicate economic uncertainty, making decentralised assets like
+                cryptocurrency
+                more desirable.</li>
+            <li>Comparing the GS10 to crypto market patterns can provide insight into prospective alterations in
+                investment behaviour.</li>
+        </ul>
+    </li>
+    <li><strong>Inflation:</strong>
+        <ul>
+            <li><strong>Explanation & Rationale:</strong> Inflation impacts the purchasing power of fiat currencies.
+            </li>
+            <li>As the cost of goods and services grows, traditional currencies may lose value, making non-fiat assets,
+                such as
+                cryptocurrencies, more appealing as a store of wealth.</li>
+            <li>During instances of strong inflation, cryptocurrencies might be viewed as a hedge against the declining
+                purchasing power
+                of fiat money.
+            </li>
+            <li>Comparing inflation rates to cryptocurrency market movements can identify relationships and provide
+                predicted insights
+                for crypto pricing.</li>
+        </ul>
+    </li>
+    <li><strong>Consumer Sentiment:</strong>
+        <ul>
+            <li><strong>Explanation & Rationale:</strong> Consumer sentiment reflects the overall mood of consumers
+                regarding the economy and their personal finances.</li>
+            <li>When consumer sentiment is high, they may be willing to consider alternative assets such as
+                cryptocurrencies.
+            </li>
+            <li>Low sentiment, on the other hand, may be associated with a conservative approach to finances,
+                potentially impacting
+                crypto investments.
+            </li>
+            <li>Correlating consumer sentiment with crypto market patterns allows one to assess the possible impact of
+                macroeconomic
+                mood on crypto adoption and valuation.
+            </li>
+        </ul>
+    </li>
+    <li><strong>Fed Funds Rate:</strong>
+        <ul>
+            <li><strong>Explanation & Rationale:</strong> The federal funds rate, set by the Federal Reserve, impacts
+                the broader financial ecosystem.</li>
+            <li>A rising interest rate may make traditional investments more tempting due to better returns on
+                fiat-based assets, thus
+                diverting focus away from the cryptocurrency market.
+            </li>
+            <li>A lower rate, on the other hand, may make riskier investments like cryptocurrency more appealing as
+                traditional returns
+                decline.
+            </li>
+            <li>Observing how the crypto market reacts to fluctuations in the fed funds rate can provide insight into
+                the interaction
+                between traditional finance and decentralised assets.
+            </li>
+        </ul>
+    </li>
+</ul><h2>BTC Analysis</h2><h2>BTC Volume Patterns</h2>
+<ul>
+<li>
+<p>2018 Volume Spike: After 2018, there was a noticeable spike in trading volume, followed by a relatively flat trading period. It wasn't until 2020 that trading volume began to see a significant increase again.</p>
+</li>
+<li>
+<p>2021 Volume Peak: The trading volume reached its peak in 2021, but this was followed by a very sharp decline, marking a stark contrast to the heightened activity observed earlier in the year.</p>
+</li>
+</ul><h2>BTC Vs Macro Patterns</h2>
+<ul>
+<li>
+<p>The GS10 rate seems to have some inverse correlation with Bitcoin prices, especially during certain periods. When the GS10 rate decreases or remains low, there's a tendency for Bitcoin prices to rise, possibly indicating a shift of investments from traditional assets to cryptocurrencies during these times.</p>
+</li>
+<li>
+<p>Inflation appears to have a potential positive correlation with Bitcoin prices. Periods of increased inflation might coincide with rises in Bitcoin prices, suggesting that investors could be viewing Bitcoin as a hedge against inflation.</p>
+</li>
+<li>
+<p>Bitcoin prices seem to have some level of inverse relationship with consumer sentiment. During periods where consumer sentiment drops, Bitcoin experiences growth, indicating that during times of economic uncertainty, investors might be diversifying their portfolios with crypto assets.</p>
+</li>
+<li>
+<p>Similar to the GS10 rate, the Fed Funds Rate also seems to have an inverse relationship with Bitcoin prices during certain periods. When the rate is low or decreases, Bitcoin prices tend to spike, suggesting a potential shift in investment behaviors during these times.</p>
+</li>
+</ul><h2> ETH Analysis </h2><h2>ETH Volume Patterns</h2>
+<ul>
+<li>2021 Volume Peak: Ethereum's trading volume reached an all-time high in 2021, indicating heightened interest and activity in the cryptocurrency. However, this peak was followed by a sharp correction, suggesting a possible market overreaction or normalization after a period of intense trading.</li>
+<li>Consistent Growth Before 2021: Before the 2021 peak, Ethereum's volume demonstrated a consistent growth trajectory, with incremental increases over time. This steady growth suggests an increasing adoption and interest in Ethereum, leading up to the explosive activity in 2021.</li>
+</ul><h2>ETH Vs Macro Patterns</h2>
+<ul>
+<li>Similar to Bitcoin, the GS10 rate for Ethereum shows periods of inverse correlation. However, Ethereum's reaction to changes in the GS10 might be more immediate and pronounced, suggesting that investors could be using Ethereum as a more agile asset in response to traditional market changes.</li>
+<li>While Bitcoin showed a potential positive correlation with inflation, Ethereum's correlation seems less consistent. There are periods where Ethereum reacts positively to inflation spikes, but there are also phases where its price doesn't reflect inflationary trends. This could indicate that other market forces or fundamentals play a more dominant role in influencing Ethereum's price.</li>
+<li>Ethereum's relationship with consumer sentiment appears to be more complex. While there are times when Ethereum grows during drops in consumer sentiment, there are also phases where Ethereum remains relatively stable despite changes in sentiment. This could suggest that Ethereum's adoption and use-cases might be driving its value, independent of broader economic sentiment.</li>
+<li>Ethereum, like Bitcoin, seems to have periods of inverse correlation with the Fed Funds Rate. However, Ethereum's spikes, especially during times of rate decreases, appear to be sharper and more rapid. This could indicate that Ethereum is perceived as a higher-risk, higher-reward asset compared to Bitcoin.</li>
+</ul><h2>USDT Analysis </h2><h2>USDT Volume Patterns</h2>
+<ul>
+<li>Volume Surge in 2021: USDT's trading volume witnessed a substantial surge in 2021. Given that Tether (USDT) is a stablecoin, this surge might indicate a heightened demand for stable value storage within the cryptocurrency market, especially during periods of high volatility in other cryptocurrencies.</li>
+<li>After the peak in 2021, USDT's volume observed a sharp correction. This could suggest a normalization in trading activities or that traders and investors reduced their reliance on USDT after a period of intense trading or hedging.</li>
+</ul><h2>USDT Vs Macro Patterns</h2>
+<ul>
+<li>When traditional investments like treasury bonds become less appealing, as indicated by the GS10 rate, there seems to be a heightened demand for USDT. This suggests that investors may turn to USDT during volatile periods in the broader crypto market.</li>
+<li>While inflation experiences variability, USDT's value exhibits resilience. This emphasizes USDT's role in the crypto market as a buffer against the oscillations of fiat currency value.</li>
+<li>Although USDT remains steady overall, specific declines in consumer sentiment appear to lead to increased USDT activity. This shift might indicate that during moments of dwindling economic optimism, the crypto community leans more towards assets like USDT.</li>
+<li>Regardless of the fluctuations in the Fed Funds Rate, USDT holds its value. This steadfast behavior against the backdrop of changing rates highlights USDT's significance as a protective asset in the crypto realm against shifts in traditional finance.</li>
+</ul><H2>BINANCE Analysis</h2><h2>Binance Volume Patterns</h2>
+<ul>
+<li>Volume Surge in 2021: Binance Coin (BNB) experienced a significant increase in trading volume in 2021, suggesting heightened market activity and interest in the coin during this period.</li>
+<li>Volume Correction Post-2021: After the peak, there seems to be a sharp decline in volume, indicating a market normalization or shift in trading dynamics for BNB after a period of intense activity.</li>
+</ul><h2>BNB Vs Macro Patterns</h2>
+<ul>
+<li>During periods when the GS10 rate declines or remains subdued, BNB's price appears to experience upward momentum. This could suggest that when returns from traditional investments (like treasury bonds) are diminished, investors and traders might explore alternative assets like BNB, viewing them as potentially more lucrative.</li>
+<li>BNB's price seems to exhibit resilience in the face of inflationary spikes. While there are periods of alignment between inflationary trends and BNB price movements, the overall trajectory suggests that factors other than just inflation are influencing BNB's market dynamics.</li>
+<li>BNB's price trajectory doesn't always mirror consumer sentiment. There are periods, especially during pronounced declines in consumer sentiment, where BNB experiences growth or remains resilient. This indicates that BNB's market dynamics might be influenced by its utility, adoption, or other fundamental factors beyond just broad economic sentiment.</li>
+<li>BNB seems to exhibit growth or at least stability during periods of significant shifts in the Fed Funds Rate. This behavior suggests that BNB, as a crypto asset, may offer an alternative or complement to traditional financial instruments, especially during times when the broader financial landscape is undergoing changes.</li>
+</ul><H2>XRP Analysis </h2><h2>XRP Volume Patterns</h2>
+<ul>
+<li>Volume Peak in Early 2021: XRP saw a remarkable surge in trading volume in early 2021, indicating a period of heightened market interest and activity.</li>
+<li>Subsequent Volume Fluctuations: Post the 2021 peak, XRP's volume demonstrates a series of ups and downs, suggesting that while the intense activity might have subsided, the market remains dynamic with intermittent periods of increased trading.</li>
+</ul><h2>XRP Vs Macro Patterns</h2>
+<ul>
+<li>There are evident periods when XRP's price seems to rise as the GS10 rate decreases. This might suggest that in scenarios where traditional investments (like treasury bonds) offer lower returns, traders and investors could be diversifying their portfolios with assets like XRP.</li>
+<li>XRP's price trajectory shows certain peaks that align with inflationary spikes. This suggests that during times when traditional fiat currencies lose purchasing power due to inflation, some investors might consider XRP as an alternative store of value or investment option.</li>
+<li>XRP exhibits periods of growth during significant declines in consumer sentiment. This behavior suggests that XRP might be perceived as an alternative or diversification option during times when the broader economy or traditional markets face uncertainty.</li>
+<li>XRP seems to remain resilient or even exhibit growth during periods when the Fed Funds Rate undergoes significant shifts. This suggests that XRP, as a decentralized asset, might be less influenced by traditional monetary policy decisions and offers an alternative avenue for investment during times of financial market changes.</li>
+</ul><H2>USDC Analysis </h2><h2>USDC Volume Pattens</h2>
+<ul>
+<li>Diverse Volume Phases: Before the pronounced surge in 2021, USDC experienced multiple phases of volume growth, reflecting the gradual adoption and acceptance of this stablecoin in the crypto ecosystem.</li>
+<li>Crash in in Q3-Q4 2019: In the later half of the 2019 there is a huge dip in the volume of the USDC traded which coincides with covid-19 and the Quantitative Easing due to which the value of the USD fell thereby decreasing the volume of USDC</li>
+<li>Significant Volume in 2021: A marked increase in trading volume is evident in 2021, reflecting heightened market activity and perhaps an increased reliance on stablecoins due to broader crypto market volatility during this period.</li>
+</ul><h2>USDC Vs Macro Patterns</h2>
+<ul>
+<li>As the GS10 rate encounters declines or remains subdued, USDC's value shows steadiness. This pattern might suggest that during periods when traditional investments (like treasury bonds) offer lower attractiveness, there's a turn towards assets like USDC, which provide a stable crypto alternative to traditional fiat.</li>
+<li>While inflation showcases variability, USDC's value largely holds its ground. This behavior emphasizes that in the face of rising costs and declining fiat currency value, USDC serves as a reliable crypto alternative that doesn't waver with inflationary pressures.</li>
+<li>USDC's value remains fairly steady, even during pronounced fluctuations in consumer sentiment. Interestingly, during distinct drops in consumer confidence, there's an observable increase in USDC activity, indicating that in times of economic doubt, there might be a move towards more predictable assets like USDC within the crypto domain.</li>
+<li>Across various shifts in the Fed Funds Rate, USDC showcases a consistent value. This behavior highlights that USDC, as a decentralized crypto asset, provides a steady avenue for market participants, especially when the broader financial world is in flux due to rate adjustments.</li>
+</ul><h2>Lido Staked Ether Analysis </h2><h2>STETH Volume Patterns</h2>
+<ul>
+<li>Initial Volume Surge: Lido Staked Ether seems to have experienced an early burst of trading volume, possibly around its inception or during a significant event, followed by a decline. This can often be attributed to the initial interest and activity when a new financial product or mechanism is introduced in the market.</li>
+<li>Steady Volume Uptick: Post the initial burst, the volume appears to stabilize and then gradually increases, suggesting sustained interest and perhaps growing acceptance or utilization of Lido Staked Ether in the crypto ecosystem.</li>
+<li>We See two more huge spikes in Mid 2022 and early 2023 followed by huge decline in trading volume</li>
+</ul><h2>STETH Vs Macro Patterns</h2>
+<ul>
+<li>The chart shows periods where Lido Staked Ether's price rises during declines in the GS10 rate. This could indicate that during moments when traditional investments like treasury bonds are less favorable, some market participants might be considering alternatives, and Lido Staked Ether could be among those options.</li>
+<li>Lido Staked Ether's price seems to move independently of inflationary trends. While there are some instances of alignment, the overall pattern suggests that Lido Staked Ether's value dynamics might be influenced by other factors beyond just inflation, such as its unique utility and adoption within the staking ecosystem.</li>
+<li>The price of Lido Staked Ether appears to display resilience, even amidst fluctuations in consumer sentiment. There are instances where the asset's value rises during periods of decreased consumer confidence, hinting that Lido Staked Ether might offer an appealing proposition to investors during uncertain economic times.</li>
+<li>Lido Staked Ether's value exhibits growth trends during various shifts in the Fed Funds Rate, indicating that it operates somewhat independently of traditional financial policy decisions. Its price dynamics might be influenced by its role within the Ethereum staking system and the evolving landscape of decentralized finance.</li>
+</ul><h2>DOGE Analysis </h2><h2>DOGE Volume Patterns</h2>
+<ul>
+<li>Early Phase Dynamics: Dogecoin experienced sporadic bursts of trading volume in its earlier stages, reflecting its meme-origin nature and occasional surges of interest from the crypto community.</li>
+<li>Growing Mainstream Interest: As Dogecoin began to gain more mainstream attention, its trading volumes also saw pronounced growth, highlighting its transition from a meme coin to a widely recognized crypto asset.</li>
+</ul><h2>DOGE Vs Macro Patterns</h2>
+<ul>
+<li>Dogecoin's price trajectory showcases distinct upward movements, even when the GS10 rate declines. This pattern might suggest that as traditional investments lose their allure, market participants are increasingly drawn to alternative assets, with Dogecoin being one of the beneficiaries of this trend.</li>
+<li>Dogecoin's price movements seem to diverge from inflationary trends at times. While there are certain periods where DOGE's price rises align with inflationary spikes, its independent rallies suggest that other market dynamics or sentiment-driven factors are also at play.</li>
+<li>Dogecoin, despite its origin as a meme coin, seems to have moments of growth even amidst downturns in consumer sentiment. Its price spikes during times of decreased consumer confidence might be indicative of its role as a popular speculative asset and the power of community-driven rallies.</li>
+<li>Dogecoin's price exhibits a certain independence from the traditional financial landscape. Despite shifts in the Fed Funds Rate, DOGE showcases its own set of dynamics, possibly driven by its community, media attention, or other sentiment factors.</li>
+</ul><H2>CARDANO Analysis </h2><h2>Cardano Volume Patterns</h2>
+<ul>
+<li>Sustained Growth Phases: Cardano's volume depicts a series of growth phases over time, highlighting its progressive adoption and the increasing interest from the crypto community in the project's developments and milestones.</li>
+<li>Recent Period Dynamics: While there's a clear volume peak, the subsequent periods also show significant activity, suggesting that Cardano remains a topic of interest and trading, possibly due to its technological advancements, partnerships, or other ecosystem </li>
+</ul><h2>CARDANO Vs Macro Patterns</h2>
+<ul>
+<li>Cardano's price seems to be on a growth trajectory during periods when the GS10 rate is on the decline or remains relatively stable. This behavior might suggest that as traditional investment avenues, like treasury bonds, become less compelling, market participants are seeking growth opportunities in promising blockchain projects like Cardano.</li>
+<li>Cardano's price demonstrates moments of growth that don't necessarily align with inflationary trends. This could be indicative of Cardano's independent value proposition, driven by its technology, partnerships, and milestones, rather than just macro-economic factors.</li>
+<li>Cardano showcases periods of price appreciation even when consumer sentiment dips. This suggests that Cardano's market dynamics might be influenced by its project developments, technological advancements, or community engagement rather than just broad economic sentiment.</li>
+<li>Cardano's price dynamics exhibit a level of detachment from the movements in the Fed Funds Rate. Its growth phases, especially the pronounced uptrends, indicate that ADA's value might be influenced more by its own ecosystem developments, technological breakthroughs, and community sentiment rather than traditional financial policies.</li>
+</ul><h2>Solana Analysis</h2><h2>Solana Volume Patterns</h2>
+<ul>
+<li>Emergence as a Leading Platform: Solana's volume showcases periods of significant growth, possibly reflecting its rise as a go-to platform for decentralized applications, given its scalability and fast transaction speeds.</li>
+<li>Dynamic Market Engagement: The consistent activity levels, even after the volume peaks, indicate that Solana remains in the limelight, possibly due to its ongoing project developments, partnerships, and the increasing adoption of its platform.</li>
+</ul><h2>SOLANA Vs Macro Patterns</h2>
+<ul>
+<li>Solana's price appears to ascend, especially during times when the GS10 rate faces downturns. This might hint at Solana's increasing appeal as a modern blockchain solution, capturing the attention of investors when traditional avenues like treasury bonds aren't as enticing.</li>
+<li>Solana's price movements appear to march to their own drumbeat, not always in sync with inflationary pressures. This divergence might be attributed to Solana's own ecosystem growth, technological innovations, and its standing as a prominent player in the DeFi and dApp space.</li>
+<li>Solana's price trajectory has periods of appreciation even during slumps in consumer sentiment. Such behavior might be attributed to Solana's potential as a next-gen blockchain platform, with its fast transaction capabilities and scalability drawing interest irrespective of broader economic mood swings.</li>
+<li></li>
+</ul><h2>Overall Correlation</h2><h2>Correlation across various securities in the crypto market</h2>
+<ul>
+<li>Strong Correlation Between BTC, ETH, and USDT: Bitcoin (BTC) has a strong positive correlation with Ethereum (ETH) and Tether (USDT), with values of 0.857 and 0.871, respectively. This suggests that the price movements of BTC, ETH, and USDT are often in sync, implying that similar market forces might influence them. </li>
+<li>Lack of Correlation Between BTC and STETH: Bitcoin (BTC) and Lido Staked Ether (STETH) have a near-zero correlation of -0.032. This suggests that the price movements of BTC and STETH are largely independent of each other.</li>
+<li>High Correlation Between USDT and Other Major Cryptos: Tether (USDT) showcases strong positive correlations with Ethereum (ETH), Binance Coin (BNB), and Cardano (ADA) with values of 0.945, 0.773, and 0.774, respectively. Given USDT's nature as a stablecoin, its correlation with other assets can be indicative of broader market dynamics.</li>
+<li>SOL's Unique Positioning: Solana (SOL) has relatively lower correlations with most of the listed cryptocurrencies, the highest being with USDC at 0.355. This might indicate that SOL's price dynamics are somewhat distinct from the others, potentially due to its unique technological offerings or market sentiment.</li>
+<li>DOGE's Moderate Correlations: Dogecoin (DOGE) exhibits moderate correlations with most of the major cryptocurrencies, with its strongest positive correlation being with USDT at 0.597. This could reflect DOGE's sentiment-driven price movements and its position as a popular alternative asset in the crypto space.</li>
+</ul><h2>Pairwise Plots</h2>
