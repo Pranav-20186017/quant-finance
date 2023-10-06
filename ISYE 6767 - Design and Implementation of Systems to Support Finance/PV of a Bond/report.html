@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ISyE 6767 Sys-Computation Finance Homework 2 Report.md</title>
+    <style></style>
+</head>
+
+<body id="preview">
+    <h1 class="code-line" data-line-start="1" data-line-end="2"><a
+            id="ISyE_6767_SysComputation_Finance_Homework_2_Report_1"></a>ISyE 6767 Sys-Computation Finance Homework 2
+        Report</h1>
+    <h2 class="code-line" data-line-start="3" data-line-end="4"><a id="1_Bond_Class_Design_3"></a>1. Bond Class Design
+    </h2>
+    <h3 class="code-line" data-line-start="5" data-line-end="6"><a id="Implementation_5"></a>Implementation:</h3>
+    <p class="has-line-data" data-line-start="7" data-line-end="8">A <code>Bond</code> class was designed to represent a
+        security that makes fixed payments on specific dates based on its expiration date, frequency of payments, and
+        coupon rate. The class definition includes:</p>
+    <ul>
+        <li class="has-line-data" data-line-start="9" data-line-end="14">
+            <p class="has-line-data" data-line-start="9" data-line-end="10"><strong>Private Members</strong>:</p>
+            <ul>
+                <li class="has-line-data" data-line-start="10" data-line-end="11"><code>expiration_date</code>: A string
+                    representing the bond’s expiration date.</li>
+                <li class="has-line-data" data-line-start="11" data-line-end="12"><code>frequency</code>: A double
+                    indicating how often payments are made.</li>
+                <li class="has-line-data" data-line-start="12" data-line-end="14"><code>coupon_rate</code>: A double
+                    representing the bond’s coupon rate.</li>
+            </ul>
+        </li>
+        <li class="has-line-data" data-line-start="14" data-line-end="21">
+            <p class="has-line-data" data-line-start="14" data-line-end="15"><strong>Functions</strong>:</p>
+            <ul>
+                <li class="has-line-data" data-line-start="15" data-line-end="16"><strong>Default Constructor</strong>:
+                    Initializes all private members to their default values.</li>
+                <li class="has-line-data" data-line-start="16" data-line-end="17"><strong>Destructor</strong>: Cleans up
+                    resources.</li>
+                <li class="has-line-data" data-line-start="17" data-line-end="18"><strong>Copy Constructor</strong>:
+                    Enables deep copying of bond objects.</li>
+                <li class="has-line-data" data-line-start="18" data-line-end="19"><strong>Parameterized
+                        Constructor</strong>: Initializes a bond using the expiration date, frequency of payments, and
+                    coupon rate.</li>
+                <li class="has-line-data" data-line-start="19" data-line-end="21"><strong>ToString()</strong>: Returns a
+                    string description of the bond.</li>
+            </ul>
+        </li>
+    </ul>
+    <p class="has-line-data" data-line-start="21" data-line-end="22">In the main application, a default bond is
+        instantiated and its information is printed to the command line. A new bond, with semi-annual payments, a 7%
+        coupon rate, and an expiration date of November 19th, 2035, is also instantiated and its characteristics are
+        printed using the <code>ToString()</code> function.</p>
+    <h3 class="code-line" data-line-start="23" data-line-end="24"><a id="Test_Results_23"></a>Test Results:</h3>
+    <p class="has-line-data" data-line-start="25" data-line-end="26">The <code>ToString()</code> function was tested
+        using two test cases:</p>
+    <ol>
+        <li class="has-line-data" data-line-start="26" data-line-end="27">Default bond: Expected output is
+            “Bond(00-00-0000,0.0000,0.0000)”.</li>
+        <li class="has-line-data" data-line-start="27" data-line-end="29">A bond with expiration date “01/01/2030”,
+            frequency of 2.0, and coupon rate of 0.05: Expected output is “Bond(01/01/2030,2.0000,0.0500)”.</li>
+    </ol>
+    <p class="has-line-data" data-line-start="29" data-line-end="30">![Include your screenshot here]</p>
+    <h2 class="code-line" data-line-start="31" data-line-end="32"><a id="2_Bond_Pricing_Function_31"></a>2. Bond Pricing
+        Function</h2>
+    <h3 class="code-line" data-line-start="33" data-line-end="34"><a id="Implementation_33"></a>Implementation:</h3>
+    <p class="has-line-data" data-line-start="35" data-line-end="36">A bond pricing function was added to the
+        <code>Bond</code> class to determine its price based on various factors. When a bond is issued, its price is
+        typically 100. However, post-issuance, the bond’s price fluctuates according to the prevailing interest rate.
+    </p>
+    <p class="has-line-data" data-line-start="37" data-line-end="38">The price of a bond is computed as the present
+        value of its cash flows:</p>
+    <p class="has-line-data" data-line-start="39" data-line-end="42">[<br>
+        ext{Price} = \sum_{i=1}^{n} CF_i imes DF_i<br>
+        ]</p>
+    <p class="has-line-data" data-line-start="43" data-line-end="44">Where:</p>
+    <ul>
+        <li class="has-line-data" data-line-start="44" data-line-end="45">( CF_i ) is the cash flow at time ( i ).</li>
+        <li class="has-line-data" data-line-start="45" data-line-end="47">( DF_i ) is the discount factor at time ( i ).
+        </li>
+    </ul>
+    <p class="has-line-data" data-line-start="47" data-line-end="48">The bond pricing function takes into account the
+        time to maturity, interest rate, coupon rate, payment frequency, and face value to compute the bond’s price.</p>
+    <h3 class="code-line" data-line-start="49" data-line-end="50"><a id="Test_Results_49"></a>Test Results:</h3>
+    <p class="has-line-data" data-line-start="51" data-line-end="52">The bond pricing function was tested for accuracy
+        using two test cases:</p>
+    <ol>
+        <li class="has-line-data" data-line-start="52" data-line-end="53">A bond with 5.0 years to maturity, 3% interest
+            rate, 4% coupon rate, and annual payments: Expected price is 104.366.</li>
+        <li class="has-line-data" data-line-start="53" data-line-end="55">A bond with 10 years to maturity, 2% interest
+            rate, 3% coupon rate, and semi-annual payments: Expected price is 108.523.</li>
+    </ol>
+    <p class="has-line-data" data-line-start="55" data-line-end="56"><img src="Screenshot 2023-09-20 164950.png"
+            alt="Screenshot">
+    </p>
+    <h2 class="code-line" data-line-start="57" data-line-end="58"><a
+            id="3_Bond_Average_Price_from_2016_to_2020_57"></a>3. Bond Average Price from 2016 to 2020</h2>
+    <h3 class="code-line" data-line-start="59" data-line-end="60"><a id="Implementation_59"></a>Implementation:</h3>
+    <p class="has-line-data" data-line-start="61" data-line-end="62">A specialized function named
+        <code>CalculateAveragePriceFrom2016To2020</code> was added to the <code>Bond</code> class to determine the
+        average price of the bond for the years from 2016 to 2020. This function utilizes the bond pricing logic and
+        computes the average price based on prevailing interest rates for each year within the specified range.
+    </p>
+    <p class="has-line-data" data-line-start="63" data-line-end="64">The function first reads interest rate data from
+        the <code>Bond_Ex3.csv</code> file. For each year in the range 2016 to 2020, it calculates the bond’s price
+        using the available interest rate and the bond’s properties. Once all prices are computed, the function returns
+        the average of these prices.</p>
+    <h3 class="code-line" data-line-start="65" data-line-end="66"><a id="Test_Results_65"></a>Test Results:</h3>
+    <p class="has-line-data" data-line-start="67" data-line-end="68">The
+        <code>CalculateAveragePriceFrom2016To2020</code> function was thoroughly tested to ensure its correctness. The
+        function was called from the main application, and the computed average price was printed to the command line
+        for verification.
+    </p>
+    <p class="has-line-data" data-line-start="69" data-line-end="70">![Screenshot 2023-09-20 164950]</p>
+    <hr>
+    <h2 class="code-line" data-line-start="73" data-line-end="74"><a id="How_to_run_the_code_73"></a>How to run the
+        code:</h2>
+    <h3 class="code-line" data-line-start="75" data-line-end="76"><a id="Software__Requirements_75"></a>Software -
+        Requirements:</h3>
+    <p class="has-line-data" data-line-start="77" data-line-end="78">To run the code correctly you will require the
+        following software components:</p>
+    <ol>
+        <li class="has-line-data" data-line-start="78" data-line-end="79">A Linux Terminal (it can be a native linux OS
+            or a compatible environment like WSL on Windows).</li>
+        <li class="has-line-data" data-line-start="79" data-line-end="80">g++ compiler (version: g+±11 or compatible).
+        </li>
+        <li class="has-line-data" data-line-start="80" data-line-end="82">make (version: GNU Make 4.2.1 or compatible).
+        </li>
+    </ol>
+    <h3 class="code-line" data-line-start="82" data-line-end="83"><a id="Commands_to_run_the_code_82"></a>Commands to
+        run the code:</h3>
+    <p class="has-line-data" data-line-start="84" data-line-end="85">With the provided <code>Makefile</code>, running
+        the code is streamlined. Follow these steps:</p>
+    <ol>
+        <li class="has-line-data" data-line-start="85" data-line-end="86">Open up a terminal in the directory containing
+            the code.</li>
+        <li class="has-line-data" data-line-start="86" data-line-end="87">Type in <code>make</code> and press enter.
+            This will compile the code using the instructions from the <code>Makefile</code>.</li>
+        <li class="has-line-data" data-line-start="87" data-line-end="89">Run the compiled binary using
+            <code>./main</code>.
+        </li>
+    </ol>
+    <p class="has-line-data" data-line-start="89" data-line-end="90"><strong>Alternatively</strong>, if you don’t have
+        <code>make</code> installed or prefer to compile manually:
+    </p>
+    <ol>
+        <li class="has-line-data" data-line-start="90" data-line-end="91">Use the command
+            <code>g++ main.cpp Bond.cpp -o main</code> to compile the code.
+        </li>
+        <li class="has-line-data" data-line-start="91" data-line-end="93">Run the compiled binary using
+            <code>./main</code>.
+        </li>
+    </ol>
+    <p class="has-line-data" data-line-start="93" data-line-end="94">If you wish to re-compile the code using
+        <code>make</code>:
+    </p>
+    <ol>
+        <li class="has-line-data" data-line-start="94" data-line-end="95">Use the command <code>make clean</code> to
+            remove previous compiled files.</li>
+        <li class="has-line-data" data-line-start="95" data-line-end="97">Then use <code>make</code> to compile again.
+        </li>
+    </ol>
+</body>
+
+</html>

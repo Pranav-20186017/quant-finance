@@ -1,0 +1,225 @@
+    INFO: 2023-09-20 17:09:42,181:               log.py:   20: Logging to D:\gatech\ISYE 6767 - Design and Implementation of Systems to Support Finance\hw-2\src\mdpdf.log
+   DEBUG: 2023-09-20 17:09:42,181:               cli.py:  103: report.md
+    INFO: 2023-09-20 17:09:42,181:         converter.py:   14: report.md
+   DEBUG: 2023-09-20 17:09:42,184:      pdf_renderer.py:  470: printSegment: ISyE 6767 Sys-Computation Finance Homework 2 Report
+   DEBUG: 2023-09-20 17:09:42,188:      pdf_renderer.py:  470: printSegment: 1. Bond Class Design
+   DEBUG: 2023-09-20 17:09:42,188:      pdf_renderer.py:  470: printSegment: Implementation:
+   DEBUG: 2023-09-20 17:09:42,189:      pdf_renderer.py:  470: printSegment: A 
+   DEBUG: 2023-09-20 17:09:42,190:      pdf_renderer.py:  470: printSegment: Bond
+   DEBUG: 2023-09-20 17:09:42,190:      pdf_renderer.py:  470: printSegment:  class was designed to represent a security that makes fixed payments on specific dates based on its
+   DEBUG: 2023-09-20 17:09:42,190:      pdf_renderer.py:  470: printSegment: expiration date, frequency of payments, and coupon rate. The class definition includes:
+   DEBUG: 2023-09-20 17:09:42,190:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: Private Members
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: :
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: expiration_date
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: : A string representing the bond
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: s expiration date.
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: frequency
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: : A double indicating how often payments are made.
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: coupon_rate
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: : A double representing the bond
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: s coupon rate.
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: Functions
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: :
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: Default Constructor
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: : Initializes all private members to their default values.
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: Destructor
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: : Cleans up resources.
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: Copy Constructor
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: : Enables deep copying of bond objects.
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: Parameterized Constructor
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: : Initializes a bond using the expiration date, frequency
+   DEBUG: 2023-09-20 17:09:42,192:      pdf_renderer.py:  470: printSegment: of payments, and coupon rate.
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: ToString()
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: : Returns a string description of the bond.
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: In the main application, a default bond is instantiated and its information is printed to the command line. A new
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: bond, with semi-annual payments, a 7% coupon rate, and an expiration date of November 19th, 2035, is also
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: instantiated and its characteristics are printed using the 
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: ToString()
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment:  function.
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: Test Results:
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: The 
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: ToString()
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment:  function was tested using two test cases:
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: Default bond: Expected output is 
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: Bond(00-00-0000,0.0000,0.0000)
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: A bond with expiration date 
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: 01/01/2030
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: , frequency of 2.0, and coupon rate of 0.05: Expected
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: output is 
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: Bond(01/01/2030,2.0000,0.0500)
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: ![
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: Include your screenshot here
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: ]
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: 2. Bond Pricing Function
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: Implementation:
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: A bond pricing function was added to the 
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: Bond
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment:  class to determine its price based on various factors. When a bond
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: is issued, its price is typically 100. However, post-issuance, the bond
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: s price fluctuates according to the prevailing
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: interest rate.
+   DEBUG: 2023-09-20 17:09:42,196:      pdf_renderer.py:  470: printSegment: The price of a bond is computed as the present value of its cash flows:
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: [
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: ext{Price} = 
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: \
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: sum
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: _
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: {i=1}^{n} CF
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: _
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: i 	imes DF
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: _
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: i
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: ]
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: Where:
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: (
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment:  CF
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: _
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: i 
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment:  is the cash flow at time 
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: (
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment:  i 
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: (
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment:  DF
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: _
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: i 
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment:  is the discount factor at time 
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: (
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment:  i 
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: The bond pricing function takes into account the time to maturity, interest rate, coupon rate, payment frequency, and
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: face value to compute the bond
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: s price.
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: Test Results:
+   DEBUG: 2023-09-20 17:09:42,200:      pdf_renderer.py:  470: printSegment: The bond pricing function was tested for accuracy using two test cases:
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: A bond with 5.0 years to maturity, 3% interest rate, 4% coupon rate, and annual payments: Expected
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: price is 104.366.
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: A bond with 10 years to maturity, 2% interest rate, 3% coupon rate, and semi-annual payments:
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: Expected price is 108.523.
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: ![
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: Include your screenshot here
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: ]
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: 3. Bond Average Price from 2016 to 2020
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: Implementation:
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: A specialized function named 
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: CalculateAveragePriceFrom2016To2020
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment:  was added to the 
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: Bond
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment:  class to
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: determine the average price of the bond for the years from 2016 to 2020. This function utilizes the bond pricing
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: logic and computes the average price based on prevailing interest rates for each year within the specified range.
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: The function first reads interest rate data from the 
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: Bond_Ex3.csv
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment:  file. For each year in the range 2016 to 2020, it
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: calculates the bond
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: s price using the available interest rate and the bond
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: s properties. Once all prices are computed,
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: the function returns the average of these prices.
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: Test Results:
+   DEBUG: 2023-09-20 17:09:42,205:      pdf_renderer.py:  470: printSegment: The 
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: CalculateAveragePriceFrom2016To2020
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment:  function was thoroughly tested to ensure its correctness.
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: The function was called from the main application, and the computed average price was printed to the command line
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: for verification.
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: ![
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: Screenshot 2023-09-20 164950
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: ]
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: How to run the code:
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: Software - Requirements:
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: To run the code correctly you will require the following software components:
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: A Linux Terminal (it can be a native linux OS or a compatible environment like WSL on Windows).
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: g++ compiler (version: g++-11 or compatible).
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment:  3 
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: make (version: GNU Make 4.2.1 or compatible).
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: Commands to run the code:
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: With the provided 
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: Makefile
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: , running the code is streamlined. Follow these steps:
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: Open up a terminal in the directory containing the code.
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: Type in 
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: make
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment:  and press enter. This will compile the code using the instructions from the 
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: Makefile
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment:  3 
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: Run the compiled binary using 
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: ./main
+   DEBUG: 2023-09-20 17:09:42,208:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: Alternatively
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: , if you don
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: t have 
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: make
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment:  installed or prefer to compile manually:
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: Use the command 
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: g++ main.cpp Bond.cpp -o main
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment:  to compile the code.
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: Run the compiled binary using 
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: ./main
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: If you wish to re-compile the code using 
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: make
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: :
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: Use the command 
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: make clean
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment:  to remove previous compiled files.
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: Then use 
+   DEBUG: 2023-09-20 17:09:42,212:      pdf_renderer.py:  470: printSegment: make
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:  470: printSegment:  to compile again.
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 0, [1, 'ISyE 6767 Sys-Computation Finance Homework 2 Report', 1, 68.0]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 1, [2, '1. Bond Class Design', 1, 106.0]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 2, [3, 'Implementation:', 1, 139.20000000000002]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 3, [3, 'Test Results:', 1, 408.0]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 4, [2, '2. Bond Pricing Function', 1, 521.1999999999999]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 5, [3, 'Implementation:', 1, 554.3999999999999]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 6, [3, 'Test Results:', 2, 98.4]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 7, [2, '3. Bond Average Price from 2016 to 2020', 2, 223.60000000000002]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 8, [3, 'Implementation:', 2, 256.8]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 9, [3, 'Test Results:', 2, 369.59999999999997]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 10, [2, 'How to run the code:', 2, 470.79999999999995]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 11, [3, 'Software - Requirements:', 2, 504.0]
+   DEBUG: 2023-09-20 17:09:42,216:      pdf_renderer.py:   53: 12, [3, 'Commands to run the code:', 2, 598.8]
