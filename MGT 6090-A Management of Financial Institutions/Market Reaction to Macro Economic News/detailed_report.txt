@@ -1,0 +1,500 @@
+Market Reaction to Macro News: A Detailed Analysis
+--------------------------------------------------------------------------------
+# 1. Understanding Monetary Policy Surprises
+----------------------------------------
+
+-   Standardized Data:
+
+-   Both the "target" and "path" factors have been standardized.
+-   This is evident from their mean values being close to 0 and a standard deviation of 1.
+-   Median Values:
+
+-   The medians for both factors are close to zero.
+-   This indicates a balance in the dataset, with roughly equal numbers of positive and negative surprises.
+-   Range of Values:
+
+-   There's a wide range observed between the minimum and maximum values for both the "target" and "path" factors.
+-   This suggests that the magnitude of monetary policy surprises has varied significantly over the time period in the dataset.
+-   Implication:
+
+-   The variability in the surprises indicates that FOMC announcements have had varying levels of unexpectedness over the years.
+-   This could be due to changing economic conditions, policy shifts, or market perceptions of the FOMC's decision-making process.
+
+Finding the Zero Lower Bound Period in the given timeline
+----------------------------------------
+
+# Note: I've chosen the 0.25% threshold as the Zero Lower Bound (ZLB) based on historical context, specifically referencing the Federal Open Market Committee (FOMC) which set the federal funds rate target range at 0 to 0.25 percent during the 2007-2009 financial crisis, underscoring its perspective on the effective lower bound (Federal Reserve, FOMC statement, December 16, 2008)
+----------------------------------------
+
+# For the period December 1, 2008, to December 1, 2015:
+----------------------------------------
+
+-   Target Factor: The "target" factor had a mean slightly negative at -0.0095, suggesting a slight negative surprise on average during this period. The spread between the minimum (-4.2108) and the maximum (0.5006) values highlights significant variability in monetary policy surprises, with more pronounced negative surprises.
+
+-   Path Factor: The mean for the "path" factor was -0.0816, indicating that the market's perception of future policy rates was more often revised downwards during this period. The larger standard deviation (0.7234) compared to the "target" factor suggests greater variability in the market's perception of future policy moves.
+
+# For the period April 1, 2020, to March 1, 2022:
+----------------------------------------
+
+-   Target Factor: The "target" factor had a mean value close to zero (-0.0114), suggesting balanced positive and negative surprises in the current policy setting. However, the presence of a significant negative minimum value (-0.7481) indicates there were instances of notable negative monetary policy surprises.
+
+-   Path Factor: With a positive mean (0.1705), the "path" factor suggests that the market, on average, revised its expectations of future policy rates upwards. This is reinforced by the maximum value of 0.9626, indicating strong positive surprises regarding forward guidance during certain times in this period.
+
+# 2. Link between Monetary Policy Surprises and Economic Indicators
+----------------------------------------
+
+2.1 Group-1 INDPRO (Industrial Production Index) Vs Monetary Policy Surprises
+----------------------------------------
+
+- I have chosen the INDPRO (Industrial Production Index) as a key economic indicator from Group 1 to analyze the effects of monetary policy shocks. My rationale for this selection is rooted in the extensive research on the transmission mechanisms of monetary policy and its impact on various facets of the economy. Christiano, Eichenbaum, and Evans (1999) emphasize the significant role of industrial production in reflecting the immediate and persistent effects of monetary policy shocks. Their findings indicate that a contractionary monetary policy shock, for instance, leads to a sustained decline in industrial production, highlighting the sensitivity and relevance of this indicator in gauging policy impacts.
+
+- Reference: Christiano, L. J., Eichenbaum, M., & Evans, C. L. (1999). Monetary Policy Shocks: What Have We Learned and to What End? In J. B. Taylor & M. Woodford (Eds.), Handbook of Macroeconomics (Vol. 1, Part A, pp. 65-148). Elsevier.
+
+1\. INDPRO vs. Target Rate (Monetary Policy Decisions)
+
+-   The correlation between INDPRO and the target rate in the same month (t) is approximately 0.0736. This suggests a positive but mild relationship between the two. As the target rate (often set by the central bank to manage inflation and economic growth) rises, it can be inferred that there's a slight increase in industrial production.
+-   The correlation between INDPRO in the following month (t+1) and the target rate is 0.0725, and for two months later (t+2), it is 0.0620. These figures indicate that the effect of the target rate on industrial production diminishes slightly over time but remains positive.
+
+2\. INDPRO vs. Path of Future Rates (Expected Monetary Policy Trajectory)
+
+-   The correlation between INDPRO and the path in the month of t is 0.0349, indicating a weaker positive relationship than with the target rate. This suggests that the expected trajectory of future monetary policy rates has a milder immediate impact on industrial production.
+-   The correlation for t+1 and t+2 are 0.0231 and 0.0142 respectively, which signifies that the impact of expected future monetary policy on industrial production further diminishes over the subsequent months.
+
+Economic Insights:
+
+-   Immediate Reactions: The Industrial Production Index shows an immediate positive reaction to the monetary policy's target rate. This could be due to the fact that when the central bank sets a higher target rate, it signals confidence in the economy, leading industries to ramp up production in anticipation of increased demand.
+
+-   Anticipating the Future: The path, or the expected trajectory of future rates, has a more muted impact on industrial production. This might be due to the inherent uncertainties involved in forecasting, causing industries to be more reactive to present conditions (target rate) than speculative ones (path).
+
+-   Persistence of Effects: The diminishing correlations over t+1 and t+2 for both target and path with INDPRO suggest that the impacts of monetary policy decisions and expectations on industrial production are more immediate and tend to wane as time progresses.
+
+2.1 Group-1 RPI (Real Personal Income) Vs Monetary Policy Surprises
+----------------------------------------
+
+# Note: -   As per Mishkin (2007), Real Personal Income represents the inflation-adjusted total income of individuals. It's highlighted that shifts in monetary policy, especially interest rate adjustments, can significantly sway consumer borrowing and expenditure behaviors. For instance, when monetary policy eases, we might witness an upsurge in consumer spending, which can potentially elevate real personal income. This underscores the sensitivity of RPI to monetary policy dynamics and its utility as an economic indicator.
+----------------------------------------
+
+Reference: Mishkin, F. S. (2007). The Economics of Money, Banking, and Financial Markets. Pearson Education.
+
+1\. RPI vs. Target Rate (Monetary Policy Decisions)
+
+-   The correlation between RPI and the target rate for the month t is approximately 0.0428. This suggests a positive but mild relationship. A rise in the target rate, often indicative of a central bank's response to strong economic conditions, might be associated with an increase in the real personal income.
+
+-   For the subsequent months t+1 and t+2, the correlations are 0.0443 and 0.0448 respectively. This indicates that the relationship between RPI and the target rate remains fairly consistent over a three-month period.
+
+2\. RPI vs. Path of Future Rates (Expected Monetary Policy Trajectory)
+
+-   The correlation between RPI and the path in the month t is 0.0499, slightly stronger than its relationship with the target rate. This hints that expected future monetary policy decisions might have a more pronounced immediate impact on real personal income.
+
+-   The correlations for t+1 and t+2 are 0.0492 and 0.0487, indicating a minor decrease in the relationship's strength. This could be because as time progresses, other economic factors come into play, slightly overshadowing the influence of the expected policy trajectory on RPI.
+
+Economic Insights:
+
+-   Monetary Policy's Impact on Income: The positive correlations suggest that as the central bank signals a strengthening economy through its decisions (target rate) and expectations (path), there's a corresponding uptick in real personal income. This might be due to increased employment opportunities, wage hikes, or dividends from investments in a booming economy.
+
+-   Consistent Influence Over Time: The fairly stable correlations across t, t+1, and t+2 imply that the effects of monetary policy on real personal income persist over at least a quarter. This showcases the lasting impact of monetary policy signals on consumer financial health.
+
+-   Expectations Matter: The slightly stronger correlation of RPI with the path as compared to the target rate underscores the significance of future monetary policy expectations. It highlights the role of forward guidance in influencing consumer sentiment and financial behavior.
+
+2.2 Group-2 UNRATE (Civilian Unemployment Rate) Vs Monetary Policy Surprises
+----------------------------------------
+
+- I've chosen the UNRATE (Civilian Unemployment Rate) as a pivotal labor market indicator from Group 2 to delve into the repercussions of monetary policy surprises. This decision is anchored in the comprehensive work by Bernanke and Blinder (1992), who underscore the direct link between monetary policy maneuvers and labor market dynamics. They elucidate that contractionary monetary policy interventions can precipitate an uptick in unemployment rates. This underscores the immediacy and potency of UNRATE as a barometer to detect swift reactions to unforeseen monetary policy shifts.
+
+- Reference: Bernanke, B. S., & Blinder, A. S. (1992). The federal funds rate and the channels of monetary transmission. *The American Economic Review*, 901-921.
+
+1\. UNRATE vs. Target Rate (Monetary Policy Decisions)
+
+-   The correlation between UNRATE and the target rate for the month t is approximately -0.0137. This is a negative but very mild relationship, suggesting that a rise in the target rate might be very faintly associated with a decrease in the unemployment rate. However, this relationship is almost negligible.
+
+-   For the subsequent months t+1 and t+2, the correlations are 0.0124 and 0.0178 respectively, indicating a slight positive relationship between leading unemployment and the target rate.
+
+2\. UNRATE vs. Path of Future Rates (Expected Monetary Policy Trajectory)
+
+-   The correlation between UNRATE and the path in the month t is -0.0769, suggesting that when the central bank signals a likely tightening of monetary policy in the future, there's a more noticeable decrease in the unemployment rate.
+
+-   The correlations for t+1 and t+2 are -0.0709 and -0.0596, indicating that the relationship's strength diminishes slightly over time.
+
+Economic Insights:
+
+-   Monetary Policy's Impact on Employment: The negative correlation between the unemployment rate and the path suggests that as the central bank signals tighter future monetary conditions, it might correspond with improved employment conditions. This could be because the central bank's expectations of future economic tightening are based on the current robust economic performance, which typically coincides with lower unemployment.
+
+-   Persisting Influence of Unemployment: The strong positive correlations between UNRATE at time t and its subsequent lags (around 0.918 for t vs t+1 and 0.988 for t+1 vs t+2) demonstrate the persistence of unemployment rates over time. This highlights the inertial nature of labor markets.
+
+-   Expectations and Labor Markets: The more pronounced negative correlation between UNRATE and the path as compared to the target rate underscores the idea that future monetary policy expectations play a pivotal role in influencing labor market conditions.
+
+2.2 Group 2 CLAIMSx(Unemployment Claims) Vs Monetary Policy Surprises
+----------------------------------------
+
+- I have chosen the `CLAIMSx` (Initial Unemployment Claims) as an essential labor market indicator from Group 2 to investigate the effects of monetary policy shocks. My decision to focus on this variable is underpinned by a plethora of research that underscores the sensitivity and immediacy of initial unemployment claims in response to economic changes. Initial unemployment claims serve as a leading indicator, providing real-time insights into the health of the labor market. In their study, Stock and Watson (1989) identified initial unemployment claims as one of several key leading indicators that provide valuable forecasting information for economic downturns. This indicator's high frequency and timeliness make it particularly relevant for analyzing the immediate effects of monetary policy shocks, as changes in the labor market conditions can be swiftly captured through fluctuations in unemployment claims.
+
+-   Reference: Stock, J. H., & Watson, M. W. (1989). New Indexes of Coincident and Leading Economic Indicators. In NBER Macroeconomics Annual 1989, Volume 4 (pp. 351-394). MIT Press.
+
+1\. CLAIMSx vs. Target Rate (Monetary Policy Decisions)
+
+-   The correlation between `CLAIMSx` and the target rate for month t is -0.0529. This indicates a modest negative relationship, suggesting that a rise in the target rate might be associated with a decrease in unemployment claims.
+
+-   For the subsequent months t+1 and t+2, the correlations are -0.0441 and 0.0009 respectively. This means the relationship weakens slightly over time and becomes almost negligible by t+2.
+
+2\. CLAIMSx vs. Path of Future Rates (Expected Monetary Policy Trajectory)
+
+-   The correlation between `CLAIMSx` and the path in month t is -0.0241, suggesting a mild negative relationship. This indicates that when there's an expectation of future monetary policy tightening, there might be a slight decrease in unemployment claims.
+
+-   The correlations for t+1 and t+2 are -0.0548 and -0.0391, indicating that the relationship remains mildly negative over time.
+
+Economic Insights:
+
+-   Monetary Policy and Job Security: The negative correlation between unemployment claims and both the target rate and the path could be interpreted as a sign of increased job security when there's an anticipation of monetary tightening. This is because tightening often comes as a response to an overheated economy, where job security is higher and unemployment claims decrease.
+
+-   Lead Impact on Labor Market: The consistently negative correlations between unemployment claims and monetary policy variables, even at lags, suggest that the effects of monetary policy on the labor market are persistent and do not dissipate immediately.
+
+-   Persistence in Unemployment Claims: The strong positive correlations between `CLAIMSx` at time t and its subsequent months (0.884 for t vs t+1 and 0.743 for t+1 vs t+2) highlight the inertia in unemployment claims, indicating that labor market conditions do not change rapidly from month to month.
+
+2.3 Group 3 HOUST (Housing Starts) Vs Monetary Policy Surprises
+----------------------------------------
+
+- I've chosen the Housing Starts as a pivotal economic indicator from Group 3. Housing starts are a leading indicator for the real estate sector, offering insights into future real estate supply levels. The rationale behind this selection is grounded in the extensive literature on the significance of housing in the U.S. economy. Following a monetary policy shock, housing starts can be particularly sensitive. For instance, an expansionary monetary policy, which typically results in lower interest rates, can stimulate borrowing and thus lead to an uptick in housing starts as it becomes cheaper for consumers and developers to finance new construction projects. Conversely, a contractionary policy can suppress housing starts as borrowing costs rise.
+
+- Reference: Leamer, E. E. (2007). Housing is the business cycle. In Proceedings - Economic Policy Symposium - Jackson Hole (pp. 149-233). Federal Reserve Bank of Kansas City.
+
+1\. HOUST vs. Target Rate (Monetary Policy Decisions)
+
+-   The correlation between `HOUST` and the target rate for month t stands at 0.0333. This indicates a slight positive relationship, suggesting that a rise in the target rate might be associated with a modest increase in housing starts.
+
+-   For the subsequent months t+1 and t+2, the correlations diminish to 0.0199 and 0.0041, respectively. This suggests that the impact of the target rate on housing starts becomes less pronounced over time.
+
+2\. HOUST vs. Path of Future Rates (Expected Monetary Policy Trajectory)
+
+-   The correlation between `HOUST` and the path in month t is 0.1109. This suggests a moderate positive relationship, meaning that when there's an expectation of future monetary policy tightening, housing starts tend to increase moderately.
+
+-   The correlations for t+1 and t+2 are 0.1195 and 0.1224, respectively. This indicates that the relationship strengthens slightly over time.
+
+Economic Insights:
+
+-   Monetary Policy and Housing Market: The positive correlation between housing starts and both the target rate and the path suggests that when there's an anticipation of tighter monetary policy, there might be an increase in housing starts. This could be driven by the anticipation of higher borrowing costs in the future, prompting builders to initiate more projects before rates rise.
+
+-   Housing Market Dynamics: The consistently positive correlations between housing starts and monetary policy variables even at lags underscore the idea that the housing market responds to monetary policy cues over an extended period.
+
+-   Persistence in Housing Starts: The robust positive correlations between `HOUST` at time t and its subsequent months (0.9703 for t vs t+1 and 0.9748 for t+1 vs t+2) showcase the momentum in housing starts, indicating that trends in the housing market tend to persist from month to month.
+
+2.4 Group 4  ISM : PMI Composite Index (PMI) Vs Monetary Policy Surprises
+----------------------------------------
+
+- I've chosen the Total Business Inventories (BUSINVx) from Group 4 as a key economic metric. Business inventories represent goods that have been produced but not yet sold, making them a vital indicator of the balance between production and consumption in the economy. My rationale for focusing on business inventories is rooted in the substantial body of literature that underscores the inventory cycle's role in economic fluctuations and its interplay with monetary policy. Following a monetary policy shock, the response of business inventories can be telling. For example, an expansionary monetary policy might lead firms to ramp up their inventories in anticipation of increased consumer demand, buoyed by easier borrowing conditions. In contrast, a contractionary policy might see firms reduce inventory accumulation, expecting muted demand due to higher borrowing costs.
+
+-   Reference: Blinder, A. S., & Maccini, L. J. (1991). The Resurgence of Inventory Research: What Have We Learned? Journal of Economic Surveys, 5(4), 291-328. This work delves into the dynamics of inventory management, its implications for business cycles, and its sensitivity to monetary policy shifts.
+
+1.  Moderate Sensitivity to Monetary Policy Shocks: Both the 'target' and 'path' variables exhibit a positive correlation with the business inventories (BUSINVx) and its subsequent lags (BUSINVx_t+1 and BUSINVx_t+2). While the correlation coefficients are not exceedingly high, they are notable. This suggests that business inventories tend to move in the same direction as the FOMC's monetary policy decisions, albeit moderately. This aligns with the understanding that an expansionary policy (like a rate cut) might encourage firms to increase inventories in anticipation of bolstered consumer demand, while a contractionary policy might have the opposite effect.
+
+2.  High Persistence in Business Inventories: The business inventories data show strong positive correlations with their own lags. Particularly, the correlation between BUSINVx and its first lag (BUSINVx_t+1) is almost perfectly positive, indicating a high level of persistence. This suggests that changes in business inventories tend to carry over strongly from one month to the next, reflecting the gradual nature of inventory adjustments.
+
+3.  Lead gged Response to Monetary Policy: The correlation between the 'path' variable and the business inventories increases slightly as we move from the current period to the first lag (BUSINVx_t+1), indicating that the effect of monetary policy on inventories might be slightly leadig. This is consistent with the idea that firms might take some time to adjust their inventory levels in response to policy shifts.
+
+# 2.5 Group 5 BUSLOANS Vs Monteary Policy Suprises
+----------------------------------------
+
+- I've opted for Commercial and Industrial Loans (BUSLOANS) as a salient metric from Group 5, focusing on Money and Credit. These loans play a pivotal role in gauging the influence of monetary policy on real economic activities, especially through the bank lending channel. An expansionary monetary policy, characterized by lower interest rates, generally boosts these loans, as it becomes more cost-effective for firms to borrow for investments and operational expansion. Conversely, a contractionary policy stance, resulting in elevated interest rates, can stifle the growth of such loans.
+
+- Kashyap and Stein (2000) offer profound insights into this dynamic. They assert that monetary policy, through its influence on bank reserves and liquidity conditions, can significantly impact bank lending, particularly commercial and industrial loans. Their research demonstrates that smaller banks, which are often more reliant on deposits for funding, exhibit more pronounced fluctuations in their lending behavior in response to monetary policy changes compared to larger banks. Such nuances underline the importance of tracking commercial and industrial loans as they can provide nuanced insights into the varied impacts of monetary policy across the banking sector and, by extension, the broader economy.
+
+-   Reference: Kashyap, A. K., & Stein, J. C. (2000). What Do a Million Observations on Banks Say about the Transmission of Monetary Policy? The American Economic Review, 90(3), 407-428.
+
+1.  Contemporaneous Correlation with FOMC Variables: The immediate correlation between "target" or "path" and "BUSLOANS" is relatively weak. This indicates that the immediate influence of monetary policy on commercial and industrial loans is subdued, perhaps due to the anticipation and gradual nature of banks' reactions to policy changes.
+
+2.  Anticipatory Effects: The correlations with the leading values of BUSLOANS (t+1​ and t+2​) suggest that banks might be anticipating future monetary policy changes and adjusting their lending behavior accordingly. This can be seen as evidence of the forward-looking behavior of banks, where they adjust their lending portfolios in anticipation of future economic and policy conditions.
+
+3.  Bank Lending Dynamics: The high correlations between BUSLOANS and its leading values highlight the anticipatory nature of the banking sector. This could be due to factors like banks' expectations about future economic conditions, anticipated changes in firms' demand for loans, or pre-emptive adjustments in response to anticipated monetary policy shifts.
+
+4.  Policy Path and Bank Lending: The correlation between "path" and BUSLOANS is more pronounced than with the "target". This might indicate that banks' lending decisions are more influenced by expectations of future monetary policy (captured by "path") than by immediate policy changes.
+
+2.6 Group 6 10Y Treasury Rate Vs Monetary Policy Suprises
+----------------------------------------
+
+- I've chosen the 10-Year Treasury Rate (10GS10) from Group 6 as a key financial indicator. The rationale behind this selection is that the yield on the 10-Year Treasury note, being a cornerstone of global finance, responds almost instantaneously to shifts in monetary policy expectations. When the Federal Reserve communicates changes in its policy stance or future expectations (target or path revisions), market participants quickly reposition their portfolios, leading to swift price and yield adjustments in the bond market. The 10-Year Treasury Rate, in particular, is emblematic of this rapid response due to its central role as a benchmark for a myriad of other financial instruments. Its swift reaction underscores the efficiency of financial markets in assimilating and acting upon fresh information.
+
+-   Reference: Gürkaynak, R. S., Sack, B., & Swanson, E. T. (2005). Do Actions Speak Louder Than Words? The Response of Asset Prices to Monetary Policy Actions and Statements. International Journal of Central Banking, 1(1), 55-93.
+
+1.  Immediate Reaction (t month): There's a slight negative correlation between the "target" and the 10-Year Treasury Rate. This suggests that when there's an unexpected increase in the target rate, the yield on the 10-Year Treasury note might decrease slightly. This is consistent with the conventional view that an unexpected tightening of monetary policy can lead to a decline in longer-term rates due to expectations of lower growth and inflation in the future. Conversely, there's a small positive correlation between the "path" and the 10-Year Treasury Rate, indicating that forward guidance about future monetary policy can influence long-term rates.
+
+2.  One Month Later (t+1 month): The correlations are weaker in this month. The direction of the correlations remains the same, but their magnitude diminishes. This suggests that while the immediate impact of a monetary policy surprise can be observed in the current month, its effects start to dissipate as we move further out.
+
+3.  Two Months Later (t+2 month): The correlation between "target" and 10GS10 remains negative, and it's nearly identical in magnitude to the t+1 month. The "path" correlation turns slightly negative, suggesting that the effects of forward guidance might be more transient or get offset by other economic factors as time progresses.
+
+4.  Persistence in GS10: The high correlations between 10GS10 and its one and two-month leads (GS10_t+1 and GS10_t+2) highlight the persistence in the 10-Year Treasury Rate. This is expected as long-term rates tend to move slowly, driven by broader economic fundamentals and expectations about future monetary policy.
+
+5.  Economic Insight: The relatively small correlations with "target" and "path" underscore the idea that while monetary policy surprises can influence long-term rates, they are just one of many factors that determine their movement. Other factors like global economic conditions, fiscal policy, and investors' risk appetite play significant roles.
+
+2.7 Group 7 CPI Vs Monetary Policy Suprises
+----------------------------------------
+
+- I've chosen the CPI: All Items (CPIAUCSL) from Group 7 as a sensitive gauge for monetary policy adjustments. If there's an unexpected hike in the target or path, indicating a tighter monetary policy, I anticipate a downward shift in the Consumer Price Index (CPI). This is because a contractionary monetary policy often curtails economic activity, leading to a drop in demand and consequently, curbing inflationary pressures.
+
+- Reference: Bernanke, B. S., & Mishkin, F. S. (1997). Inflation targeting: a new framework for monetary policy? Journal of Economic Perspectives, 11(2), 97-116.
+
+1.  Correlation between "target" and CPIAUCSL variables:
+
+-   The correlation between the target and the CPIAUCSL (Consumer Price Index for All Items) for the same month t is 0.0397, indicating a weak positive correlation. This implies that when the target rate increases, there's a slight tendency for the CPI to also increase, signaling potential inflationary pressures.
+-   The correlations with the next month's t+1 and two months later t+2 CPIAUCSL values are 0.0381 and 0.0359, respectively, indicating an even weaker but still positive relationship.
+2.  Correlation between "path" and CPIAUCSL variables:
+
+-   The correlation between the path and the CPIAUCSL for the month t is 0.0721, which is a weak positive correlation but slightly stronger than that with the target. This suggests that when the FOMC indicates a more hawkish future policy (increased path), there might be a mild upward pressure on prices.
+-   For t+1 and t+2, the correlations are 0.0688 and 0.0652, respectively, showing a gradual decrease in correlation but maintaining the positive direction.
+3.  Temporal Correlation of CPIAUCSL:
+
+-   The high correlation values (around 0.999) between t and t+1 or t+2 for the CPIAUCSL highlight the persistence of the Consumer Price Index, suggesting that price levels tend to be stable and don't fluctuate wildly from one month to the next.
+
+- Economic Insights: The positive correlations between both the target and path with the CPIAUCSL indicate that when the FOMC signals an intent to raise rates (either immediately or in the future), it might be anticipating or reacting to inflationary pressures. However, the correlations are weak, suggesting other factors also play significant roles in influencing the CPI.
+
+- Furthermore, the diminishing correlation strength from t to t+2 for both the target and path indicates that the immediate impact of FOMC decisions or signaling might be more pronounced in the short term but wanes slightly as time progresses.
+
+- Lastly, the high persistence in the CPIAUCSL values from month to month underscores the importance of monitoring this index, as significant deviations from its trend could be indicative of broader economic shifts.
+
+2.8 Group 8 S&P 500 Vs Monetary Policy Surprises
+----------------------------------------
+
+- The S&P 500, encompassing a broad spectrum of the U.S. stock market, is likely to exhibit immediate reactions to changes in the target and path. A hawkish stance (indicative of higher future interest rates) by the FOMC may exert downward pressure on the S&P 500 as higher borrowing costs can slow business expansion, whereas a dovish stance (suggesting lower future rates) may boost the index due to anticipated cheaper capital availability for businesses.
+
+-   Reference: Rigobon, R., & Sack, B. (2004). The impact of monetary policy on asset prices. Journal of Monetary Economics, 51(8), 1553-1575.
+
+1.  Target and S&P 500:
+-   The correlation between the target rate and the S&P 500 is positive but relatively weak across all three periods (t, t+1, and t+2). This implies that when the target rate increases, the S&P 500 slightly tends to go up, and vice versa. However, the strength of this relationship is not strong enough to make definitive predictions.
+2.  Path and S&P 500:
+-   The correlation between the path and the S&P 500 is positive and more pronounced than that with the target rate. This suggests that anticipated future monetary policy (as indicated by the path) has a more tangible impact on stock market performance than immediate policy actions. Specifically, when the market anticipates more accommodative monetary policy in the future (lower future rates), the S&P 500 tends to rise, and vice versa.
+3.  Lagged Effects:
+-   The S&P 500's correlation with the path remains fairly consistent from month t to t+2. This consistent correlation suggests that the stock market's reactions to anticipated monetary policy are sustained over a few months.
+-   The auto-correlations of the S&P 500 from month t to t+2 are extremely high, indicating a strong momentum effect in the stock market. This means that stock market movements in one month are very likely to continue in the same direction in subsequent months.
+
+Economic Insights:
+
+-   The stock market, represented by the S&P 500, reacts more to future anticipated monetary policy (path) than to immediate policy decisions (target). This is consistent with the idea that investors make decisions based on future expectations.
+-   While the impact of the target rate on the S&P 500 is minimal, it's essential to understand that the stock market is influenced by a myriad of factors, and the federal funds rate is just one among them. Other global events, corporate earnings, and geopolitical risks, for example, can play a significant role in stock market movements.
+-   The consistent positive correlation between the path and the S&P 500 underscores the importance of clear communication from the Federal Reserve. Forward guidance regarding future monetary policy can influence investor sentiment and stock market performance.
+
+# 3. Link between Monetary Policy Surprises and Aggregate Stock Returns
+----------------------------------------
+
+<b>Note on Methodology for Step 3 Analysis:</b>
+
+In the process of analyzing the link between Monetary Policy Surprises and Aggregate Stock Returns for Step 3, I employed two distinct methodologies for regression analysis:
+
+1.  OLS Regression using Statsmodels: This method is conventionally used for econometric analyses and provides a comprehensive summary of the regression results, including statistics like R-squared, t-values, and p-values, which are essential for inferential purposes.
+
+2.  Linear Regression using Scikit-learn (sklearn): Renowned for its machine learning capabilities, sklearn's linear regression was used as a supplementary approach. While it primarily provides coefficients and intercepts, it serves as a quick and effective means to validate the OLS results.
+
+The rationale behind employing both methodologies was to cross-verify the results obtained from one method with the other. This redundancy ensures the robustness and reliability of the results. Consequently, instead of the typical three sets of values (for day -1, day 0, and day +1), we have six sets -- three from each method.
+
+For subsequent steps beyond Step 3, I will be focusing solely on the coefficients, as they are the primary values of interest. The dual-method approach was limited to Step 3 and was performed as a sanity check to ensure the accuracy and consistency of our findings.
+
+fomc_data.head()
+
+# Economic Insights:
+----------------------------------------
+
+1.  Intercept (Constant α):
+
+-   For day 0, the intercept is positive and statistically significant, indicating that, on average, there's a positive return of approximately 0.3363% when target and path surprises are zero.
+-   For day -1, the intercept is positive but smaller than that of day 0, suggesting a positive return of approximately 0.1327% on the day before FOMC when target and path surprises are zero.
+-   For day +1, the intercept is negative, implying a negative return of approximately 0.0196% on the day after FOMC when target and path surprises are zero.
+2.  Target Coefficients (β1​):
+
+-   For all three days, the coefficients for the target surprises are negative and statistically significant. This suggests that an increase in the target surprise leads to a decrease in the equity returns.
+-   Comparing the magnitudes: The impact of target surprises is the strongest on day 0, followed by day +1, and then day -1.
+3.  Path Coefficients (β2​):
+
+-   For all three days, the coefficients for the path surprises are negative and statistically significant. This indicates that an increase in the path surprise results in a decrease in the equity returns.
+-   Comparing the magnitudes: The impact of path surprises is the strongest on day 0, followed by day -1, and then day +1.
+4.  Goodness of Fit:
+
+-   The R-squared value is a measure of how well the model's predictions match the actual data. For day 0, the R-squared is 0.049, for day -1, it's 0.005, and for day +1, it's 0.027. This suggests that the model explains 4.9% of the variation in equity returns on day 0, 0.5% on day -1, and 2.7% on day +1. These values indicate a relatively low explanatory power of the model, suggesting that other factors might also be influencing the equity returns.
+5.  Significance of Coefficients:
+
+-   The p-values for all the coefficients are virtually zero, indicating that the coefficients are statistically significant.
+
+# Economic Interpretations:
+----------------------------------------
+
+1.  Reaction to Monetary Policy Surprises:
+
+-   The negative coefficients for both target and path surprises on all days suggest that the market negatively reacts to monetary policy surprises. When there's an unexpected change in the target or path, equity returns tend to decrease.
+2.  Immediate Impact on Day 0:
+
+-   The results show that the impact of monetary policy surprises is strongest on the day of the FOMC announcement (day 0). This suggests that the market reacts immediately to the FOMC's decisions.
+3.  Lagged and Lead Effects:
+
+-   There's a lagged negative effect on day +1, and a smaller lead effect on day -1. This could be due to investors adjusting their positions in anticipation of the FOMC decision a day before and further adjustments a day after the announcement.
+4.  Overall Market Dynamics:
+
+-   While the model captures some of the variations in equity returns based on target and path surprises, a significant portion of the variation remains unexplained. This indicates the complex nature of the stock market, where numerous other factors, both domestic and global, might be influencing returns.
+
+# 4. Link between Monetary Policy Surprises and Firm Level “Raw” Stock Returns
+----------------------------------------
+
+# Economic Insights:
+----------------------------------------
+
+1.  Intercept (Constant α):
+
+-   For day 0, the intercept is positive, indicating an average positive return of approximately 0.3012% when target, path surprises, and firm size are zero.
+-   For day -1, the intercept is positive but much smaller, signifying a minimal average positive return of approximately 0.0038%.
+-   For day +1, the intercept is negative, implying an average negative return of approximately 0.0154%.
+2.  Target Coefficients (β1​):
+
+-   On day 0 and day +1, the coefficients for target surprises are negative and significant, suggesting a negative reaction in firm stock returns to target surprises on these days.
+-   On day -1, the target coefficient is positive but very close to zero, indicating almost no relation between target surprises and firm stock returns a day before the FOMC announcement.
+3.  Path Coefficients (β2​):
+
+-   The coefficients for path surprises are negative on all days, suggesting that an increase in the path surprise leads to a decrease in the firm stock returns.
+-   The magnitude of this effect is largest on day +1, followed by day 0, and then day -1.
+4.  Size Coefficients (β3​):
+
+-   The size coefficient represents the effect of firm size on stock returns. On days 0 and -1, the coefficient is positive, albeit very small, indicating that larger firms might experience slightly higher returns on these days.
+-   On day +1, the size coefficient is negative, suggesting that larger firms might experience slightly lower returns on this day.
+5.  Model Fit and Robustness:
+
+-   The R-squared value for day 0 is 0.002, indicating that the model explains only 0.2% of the variation in firm stock returns on this day. This low R-squared suggests that there are other significant factors influencing firm stock returns.
+-   The note about a large condition number suggests potential multicollinearity or other numerical problems. This implies that the predictors might not be independent of each other, which can affect the reliability of individual coefficient estimates.
+
+# Economic Interpretations:
+----------------------------------------
+
+1.  Firm Reaction to Monetary Policy Surprises:
+
+Firms, on average, react negatively to both target and path surprises, especially on the day of the FOMC announcement (day 0) and the day after (day +1). This is consistent with the aggregate stock return findings from Step 3.
+
+2.  Influence of Firm Size:
+
+The positive coefficient for size on days 0 and -1 suggests that larger firms might have slightly higher returns on these days. On day +1, however, the reverse is true. This could be due to various reasons, such as larger firms being more exposed to macroeconomic factors or having better hedging mechanisms in place.
+
+3.  Model Limitations:
+
+The low R-squared value implies that while target and path surprises and firm size have some influence on firm stock returns, many other factors are at play. Investors and analysts should be cautious in using this model for prediction without considering other influential factors.
+
+# 5. Link between Monetary Policy Surprises and Firm Level Cumulative Abnormal Returns (CARs)
+----------------------------------------
+
+# Analysis
+----------------------------------------
+## 1\. Calculating Cumulative Abnormal Returns (CARs):
+----------------------------------------
+
+Using the given formula, the CAR for each firm over a 3-day window centered around the FOMC date was computed. This provides insights into how firms react over a short period around major monetary policy announcements.
+
+## 2\. Regression Analysis of CARs:
+----------------------------------------
+
+Results:
+
+-   Intercept (Constant): A negative intercept of -0.0026 suggests that, on average, firms experience a negative CAR of approximately 0.26% around FOMC dates when all other variables are held constant.
+
+-   Target Surprise Coefficient: The positive coefficient for target surprises (0.0005) indicates that an increase in target surprises leads to a slight rise in CARs. This signifies that firms, on average, react positively to target surprises over the 3-day window.
+
+-   Path Surprise Coefficient: The coefficient for path surprises is statistically insignificant, suggesting that the path surprise has a negligible cumulative effect on firms' stock returns over the 3-day window. This aligns with the immediate reactions observed in Step 4.
+
+-   Firm Size Coefficient: The coefficient for firm size is positive, albeit very small. This suggests that larger firms might experience slightly higher CARs around FOMC dates.
+
+Model Observations:
+
+-   The R-squared value is near zero, suggesting that the regression model explains only a tiny fraction of the variability in CARs.
+
+-   The large condition number indicates potential multicollinearity issues, suggesting that the predictors might not be independent. This can affect the reliability of the coefficient estimates.
+
+## 3\. Descriptive Statistics and Distribution of CARs:
+----------------------------------------
+
+-   The mean CAR is -0.00217, indicating that firms, on average, experience negative CARs around FOMC dates.
+
+-   The distribution is wide, with a standard deviation of 0.09957, showing varied firm reactions.
+
+-   The presence of extreme values in the CAR distribution suggests that certain firms or industries may be particularly sensitive to monetary policy changes.
+
+## 4\. Comparison with Step 4 Insights:
+----------------------------------------
+
+-   Immediate vs. Cumulative Effects: While immediate reactions on day 0 and day +1 in Step 4 were predominantly negative, the cumulative effect over the 3-day window in Step 5 shows a more mixed reaction. Some firms experience positive CARs despite negative immediate reactions.
+
+-   Role of Firm Size: Both steps emphasize the influence of firm size on stock returns around FOMC announcements. Larger firms tend to fare slightly better both immediately and cumulatively.
+
+-   Target vs. Path Surprises: While both target and path surprises influenced immediate reactions in Step 4, only target surprises seem to have a cumulative impact in Step 5.
+
+# Concluding Insights:
+----------------------------------------
+
+1.  Monetary Policy Surprises: Firms' cumulative reactions around FOMC announcements differ from their immediate responses. While firms generally react negatively immediately after the announcements, the cumulative effect shows a more varied picture.
+
+2.  Firm Size Matters: Larger firms consistently show slightly better returns both immediately and over the 3-day window, emphasizing the role of firm size in determining reactions to monetary policy surprises.
+
+3.  Implications for Investors: The varying reactions underscore the importance of understanding both immediate and cumulative effects when analyzing the impact of FOMC announcements. Investors should consider firm-specific dynamics, including size and sector, when gauging the implications of these macroeconomic events.
+
+# 6. Link between Monetary Policy Surprises and Portfolio Level “Raw” Stock Returns
+----------------------------------------
+
+# Step 6 Analysis: Linking Monetary Policy Surprises to Portfolio Level "Raw" Stock Returns
+----------------------------------------
+
+## 1\. Descriptive Statistics for Each Portfolio:
+----------------------------------------
+
+Small Size Portfolio:
+
+-   Mean Return: 0.002685 (0.2685%)
+-   Standard Deviation: 0.009827 (0.9827%)
+-   Median Return (p50): 0.002032 (0.2032%)
+-   Interquartile Range: -0.002472 (25th percentile) to 0.005989 (75th percentile)
+
+Medium Size Portfolio:
+
+-   Mean Return: 0.005172 (0.5172%)
+-   Standard Deviation: 0.016163 (1.6163%)
+-   Median Return (p50): 0.003358 (0.3358%)
+-   Interquartile Range: -0.004569 (25th percentile) to 0.011866 (75th percentile)
+
+Large Size Portfolio:
+
+-   Mean Return: 0.003234 (0.3234%)
+-   Standard Deviation: 0.012755 (1.2755%)
+-   Median Return (p50): 0.001746 (0.1746%)
+-   Interquartile Range: -0.003004 (25th percentile) to 0.008783 (75th percentile)
+
+These statistics show the variability in portfolio returns based on firm size. On average, medium-sized firms have the highest returns, followed by large and then small firms.
+
+## 2\. Regression Analysis of Portfolio Returns:
+----------------------------------------
+
+For ret_{-1}, ret_0, and ret_{+1}:
+
+-   Intercept (Constant): All models show a positive intercept around 0.0028, suggesting that, on average, portfolios experience a positive return of approximately 0.28% the day before, on, and after FOMC dates when all other variables are held constant.
+
+-   Target Surprise Coefficient: The negative coefficient for target surprises indicates that an increase in target surprises leads to a decrease in portfolio returns across all three days. This suggests that portfolios, on average, react negatively to target surprises.
+
+-   Path Surprise Coefficient: The coefficient for path surprises is not statistically significant across the three days, suggesting that path surprises have a negligible effect on portfolio returns around FOMC announcements.
+
+-   Size Coefficients: The size coefficients are not statistically significant for small and large-sized portfolios, suggesting that size does not have a significant impact on portfolio returns around FOMC announcements. However, medium-sized portfolios show a positive and statistically significant coefficient, indicating higher returns for medium-sized portfolios on FOMC dates.
+
+# Economic Insights:
+----------------------------------------
+
+1.  Reactions to Monetary Policy Surprises: Portfolios, on average, react negatively to target surprises across the three days centered around FOMC announcements. This is consistent with findings from previous steps where individual firm and aggregate stock returns were analyzed.
+
+2.  Influence of Portfolio Size: The positive return for medium-sized portfolios, both in the descriptive statistics and the regression analysis, suggests that these firms fare better around FOMC announcements compared to small and large firms. This might be due to medium-sized firms being more agile and adaptive to economic news compared to larger firms, yet having more resources and stability compared to smaller firms.
+
+3.  Model Robustness: The R-squared values for the regressions are low, suggesting that the regression models explain only a small portion of the variability in portfolio returns. Also, the potential multicollinearity issues highlighted by the regression results suggest that the predictors might not be independent, which can affect the reliability of the coefficient estimates.
+
+# 7. Link between Monetary Policy Surprises and Industry Level Stock Returns
+----------------------------------------
+
+# Economic Insights:
+----------------------------------------
+
+- Variability Across Industries: The descriptive statistics show considerable variability in returns across industries. The Services industry has the highest mean return, while the Finance, Insurance, and Real Estate industry has a slight negative mean return. Such differences may reflect varying sensitivities of these industries to monetary policy changes.
+
+- Significance of Services: The Services industry stands out with a particularly high return, suggesting that companies in this sector might be particularly sensitive or responsive to monetary policy surprises.
+
+- Manufacturing Gap: The lack of statistics for the Manufacturing industry suggests that there may have been no significant stock movements in this sector around FOMC announcements, or there might be missing data.
+
+- Finance, Insurance, and Real Estate: This industry has a slight negative mean return, indicating that, on average, firms in this sector may have a negative reaction to FOMC announcements. Given that this industry is directly related to interest rate decisions made during FOMC meetings, it's not surprising that there's a significant response.
+
+- Public Administration Volatility: The high standard deviation for Public Administration suggests that this industry is volatile around FOMC announcements.
+
+
+Conclusion:
+This comprehensive report encapsulates the intricate relationship between monetary policy surprises and stock returns. The analyses, spanning aggregate, firm-level, and industry-level perspectives, highlight the multifaceted impact of monetary policies on the financial market. It's evident that while monetary policy surprises play a crucial role, their effects are modulated by various factors, including firm size and industry. Investors and policymakers are advised to consider these intricate dynamics for informed decision-making.
