@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import random
 X = [-1] * 56 + [1] * 44
+
 random.shuffle(X)
 M = []
 s = 0

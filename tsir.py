@@ -27,6 +27,6 @@ def Z(i,j, n):
 init_lattice(r,5)
 rate(5,5)
 print(r)
-print(Z(0,0,4))
+print(Z(0,0,3))
 
 
